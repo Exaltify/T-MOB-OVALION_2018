@@ -1,0 +1,42 @@
+html{
+	height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+#render-target{
+  height: 100%;
+}
+
+.container{
+	height:100%;	
+}
+
+header {
+	border: solid 1px black;
+	display: flex;
+	padding: 10px;
+}
+
+#menu-btn {
+	border: solid 1px black;
+	display: inline-block;
+}
+
+#title{
+	display: inline-block;
+	text-align: center;
+	flex-grow: 100;
+}
+
+#menu-bar{
+	height: 100%;
+	width: 30%;
+	border: solid 1px black;
+	margin-top: 10px;
+	text-align: center;
+}
