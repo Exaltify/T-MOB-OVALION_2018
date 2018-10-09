@@ -15,7 +15,7 @@ export default class App extends Component {
         <div id="main">
           <MenuBar />
 
-          <div id="main-content"><h1>BIENVENIDAD</h1></div>
+          <div id="main-content"></div>
         </div>
         
       </div>
