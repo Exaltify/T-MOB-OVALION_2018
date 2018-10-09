@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
+import MenuBar from './MenuBar.js';
+import Header from './Header.js';
+
  
 // App component - represents the whole app
 export default class App extends Component {
 	
-	
-	
   render() {
     return (
       <div className="container">
-        <header>
-		  <div id="menu-btn">
-		    <h1>MENU</h1>
-		  </div>
-		  <div id="title">
-            <h1>Ovalion</h1>
-          </div>
-        </header>
-        
-        <div id="menu-bar">
-			MENU BAR
+
+        <Header />
+
+        <div id="main">
+          <MenuBar />
+
+          <div id="main-content"><h1>BIENVENIDAD</h1></div>
         </div>
         
       </div>
