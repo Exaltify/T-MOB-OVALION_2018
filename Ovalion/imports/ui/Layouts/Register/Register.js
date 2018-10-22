@@ -7,22 +7,20 @@ export default class Register extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      mail: '',
-      password: '',
-      city: '',
-    }
   }
 
   handleSubmit = () => {
-    let mail = this.state.mail;
-    let password = this.state.password;
-    let city = this.state.city;
+    let mail = this.emailAddress.value;
+    let password = this.password.value;
+    let city = this.city.value;
+    let admin = 0;
 
     Meteor.call('user.insert', admin, mail, password, city,
       (err) => {
-        if (err)
+        if (err) {
           console.log('error creating acc');
+          console.log(err);
+        }
       })
   }
 
@@ -60,6 +58,17 @@ export default class Register extends Component {
                 name="password"
                 placeholder="Mot de passe"
                 ref={(password) => { this.password = password; return this.password; }}
+              />
+            </label>
+
+            <label htmlFor="city">
+              <input
+                className="login-input"
+                id="city"
+                type="text"
+                name="city"
+                placeholder="Ville"
+                ref={(password) => { this.city = city; return this.city; }}
               />
             </label>
             <button className="login-button-submit" onClick={this.handleSubmit}><p>S'inscrire</p></button>

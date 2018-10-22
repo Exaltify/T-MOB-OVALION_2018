@@ -13,7 +13,8 @@
     "gradle": "^1.0.9",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "simple-schema": "^1.1.0"
   },
   "meteor": {
     "mainModule": {

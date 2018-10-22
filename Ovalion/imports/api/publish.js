@@ -59,11 +59,12 @@ Meteor.methods({
     return users;
   },
 
-  'user.insert': (admin, mail, password, logoSrc, address, phone, workLabel, contacts, contributors) => {
+  'user.insert': (admin, mail, password, city) => {
+    console.log(password);
     if (admin === 1)
       createAdminAccount(mail, password);
     else
-      createAccount(mail, password, logoSrc, address, phone, workLabel, contacts, contributors);
+      createAccount(mail, password, city);
   },
 
   'user.delete': (userId) => {
