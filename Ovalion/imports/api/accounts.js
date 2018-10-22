@@ -46,6 +46,7 @@ Accounts.onCreateUser((options, pUser) => {
   user.admin = 0;
   user.profile.city = options.city;
   user.profile.team = options.team;
+  user.profile.language = 'fr';
   return user;
 });
 

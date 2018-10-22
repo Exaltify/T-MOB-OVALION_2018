@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="132e15ba-afa7-49a1-8d0f-ef1210a08259" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Ovalion/.meteor/packages" afterPath="$PROJECT_DIR$/Ovalion/.meteor/packages" />
-      <change beforePath="$PROJECT_DIR$/Ovalion/.meteor/versions" afterPath="$PROJECT_DIR$/Ovalion/.meteor/versions" />
-      <change beforePath="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.js" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.js" />
-      <change beforePath="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js" />
+      <change beforePath="$PROJECT_DIR$/Ovalion/imports/api/accounts.js" afterPath="$PROJECT_DIR$/Ovalion/imports/api/accounts.js" />
+      <change beforePath="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css" />
+      <change beforePath="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js" afterPath="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js" />
+      <change beforePath="$PROJECT_DIR$/Ovalion/package-lock.json" afterPath="$PROJECT_DIR$/Ovalion/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/Ovalion/package.json" afterPath="$PROJECT_DIR$/Ovalion/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,70 +20,156 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="accounts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/accounts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-              <folding>
-                <element signature="e#633#669#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-      </list>
-    </option>
+    <splitter split-orientation="horizontal" split-proportion="0.45534042">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/client/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="62" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MenuBar.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="326">
+                  <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MenuBar.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Register.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/client/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-8">
+                  <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Register.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-8">
+                  <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="publish.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/publish.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-8">
+                  <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="accounts.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/accounts.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="484">
+                  <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -122,37 +206,12 @@
         <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Parametres.js" />
         <option value="$PROJECT_DIR$/Ovalion/imports/ui/MenuBar.js" />
         <option value="$PROJECT_DIR$/Ovalion/imports/ui/App.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Calendrier/Calendrier.js.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Calendrier/Calendrier.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/MesVoyages/MesVoyages.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Parametres/Parametres.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Reserver/Reserver.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Header/Header.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBarItem/MenuBarItem.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MesVoyages/MesVoyages.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBarItem/MenuBarItem.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.js" />
-        <option value="$PROJECT_DIR$/Ovalion/client/main.html" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/api/model/ModelMatch.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/api/model/modelTeam.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/api/accounts.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.css" />
         <option value="$PROJECT_DIR$/Ovalion/client/main.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/api/publish.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/startup/server.js" />
-        <option value="$PROJECT_DIR$/Ovalion/server/main.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/startup/serverStartup.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/api/model/modelMatch.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.css" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.js" />
+        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.css" />
+        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css" />
+        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js" />
         <option value="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js" />
-        <option value="$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.js" />
+        <option value="$PROJECT_DIR$/Ovalion/imports/api/accounts.js" />
       </list>
     </option>
   </component>
@@ -166,13 +225,57 @@
     <handled-path value="$PROJECT_DIR$/Ovalion/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="66" />
-    <option name="y" value="-11" />
-    <option name="width" value="1855" />
-    <option name="height" value="1092" />
+    <option name="x" value="281" />
+    <option name="y" value="98" />
+    <option name="width" value="1226" />
+    <option name="height" value="997" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>BashSupport</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -189,7 +292,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +309,12 @@
               <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
               <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,21 +323,6 @@
               <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -252,7 +346,16 @@
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="Component" type="462c0819:PsiDirectoryNode" />
+              <item name="MenuBar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -269,7 +372,7 @@
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="MainContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -286,17 +389,11 @@
               <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="T-MOB-Ovalion_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="T-MOB-Ovalion_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Ovalion" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,19 +403,124 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Ovalion/imports/ui/Component" />
-      <recent name="$PROJECT_DIR$/Ovalion/imports/ui/Layouts" />
-      <recent name="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBarItem" />
-      <recent name="$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar" />
-      <recent name="$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Ovalion/public" />
-    </key>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/.meteor/packages</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/.meteor/versions</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/imports/api/publish.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/package-lock.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/server/main.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Ovalion/imports/startup/serverStartup.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -348,10 +550,13 @@
       <workItem from="1538826589951" duration="2539000" />
       <workItem from="1538983814099" duration="3794000" />
       <workItem from="1538988604884" duration="10715000" />
-      <workItem from="1539073197812" duration="1914000" />
-      <workItem from="1540164641154" duration="8332000" />
-      <workItem from="1540173011314" duration="476000" />
-      <workItem from="1540192212271" duration="8599000" />
+      <workItem from="1539073197812" duration="6402000" />
+      <workItem from="1539154106755" duration="2178000" />
+      <workItem from="1539263211521" duration="599000" />
+      <workItem from="1539589612174" duration="339000" />
+      <workItem from="1539677476013" duration="403000" />
+      <workItem from="1539680719463" duration="599000" />
+      <workItem from="1540193754676" duration="12037000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;A New Hope&quot;">
       <created>1538829247745</created>
@@ -364,17 +569,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36369000" />
+    <option name="totallyTimeSpent" value="39605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="-11" width="1855" height="1092" extended-state="6" />
+    <frame x="0" y="-4" width="1920" height="1033" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25081968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15603584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24255319" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06858407" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -400,47 +605,161 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;A New Hope&quot;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MesVoyages/MesVoyages.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MonEquipe/MonEquipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Parametres/Parametres.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Reserver/Reserver.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/MonEquipe.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Reserver/Reserver.css">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Reserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Parametres.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/AccountsUIWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/MenuBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/server/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/App.css" />
     <entry file="file://$PROJECT_DIR$/Ovalion/imports/startup/accounts-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -448,310 +767,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/AccountsUIWrapper.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/test.js" />
+    <entry file="file://$PROJECT_DIR$/Ovalion/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="108">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Evolt/AppliKiné/app/imports/ui/Home.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/MenuBarCalendrier.js" />
+    <entry file="file://$PROJECT_DIR$/Ovalion/node_modules/react-dom/cjs/react-dom.development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1096">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="219">
+          <caret line="18150" column="2" lean-forward="false" selection-start-line="18150" selection-start-column="2" selection-end-line="18150" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MesVoyages/MesVoyages.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Test.js" />
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/parametres.js" />
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Calendrier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBarItem/MenuBarItem.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/ind1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/inda.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/indb.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/indb.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/indc.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/indc.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/testbg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/samoth.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/logo2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/a.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/public/assets/b.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="1" column="53" lean-forward="false" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Calendrier/Calendrier.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Calendrier/Calendrier.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/MesVoyages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.js">
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/MonEquipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Reserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Main-Contents/Parametres.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/AccountsUIWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/MenuBarItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/MenuBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovalion/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/share/Trash/files/hamburgers-master/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBarItem/MenuBarItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Evolt/AppliKiné/app/imports/api/model/modelBilanTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/model/modelTeam.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Evolt/AppliKiné/app/server/accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="-8">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovalion/client/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="36">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#27#66#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/server/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/startup/serverStartup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/model/modelMatch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding>
-            <element signature="e#633#669#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/MainContainer/MainContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -759,10 +888,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Login/Login.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="432">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/Register/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/api/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Layouts/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovalion/imports/ui/Component/MenuBar/MenuBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
