@@ -17,7 +17,6 @@ export default class App extends Component {
   }
 
   refreshApp = () => {
-    console.log("force");
     this.forceUpdate();
   }
 

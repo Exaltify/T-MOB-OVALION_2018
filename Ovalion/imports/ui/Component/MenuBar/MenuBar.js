@@ -2,23 +2,7 @@ import React, { Component } from 'react';
 import MenuBarItem from '../MenuBarItem/MenuBarItem';
 import "./MenuBar.css";
 import LocalizedStrings from 'react-localization';
-
-let strings = new LocalizedStrings({
-    en:{
-        Cal:"Calendar",
-        Eq:"My team",
-        Res:"Reservation",
-        Voy:"My trips",
-        Par:"Parameters",
-    },
-    fr: {
-        Cal:"Calendrier",
-        Eq:"Mon equipe",
-        Res:"Reservation",
-        Voy:"Mes voyages",
-        Par:"Paramètres",
-    }
-});
+import { MenuBarStrings } from '../../../localization/strings';
 
 export default class MenuBar extends Component {
 
@@ -45,11 +29,11 @@ export default class MenuBar extends Component {
         return (
                 <div className={ menuBarCssClass }>
                     <ul>
-                        <MenuBarItem name={strings.Cal} contentHandler={ this.setParentContent } contentCode={1} />
-                        <MenuBarItem name={strings.Eq} contentHandler={ this.setParentContent } contentCode={2} />
-                        <MenuBarItem name={strings.Res} contentHandler={ this.setParentContent } contentCode={3} />
-                        <MenuBarItem name={strings.Voy} contentHandler={ this.setParentContent } contentCode={4} />
-                        <MenuBarItem name={strings.Par} contentHandler={ this.setParentContent } contentCode={5} />
+                        <MenuBarItem name={MenuBarStrings.Cal} contentHandler={ this.setParentContent } contentCode={1} />
+                        <MenuBarItem name={MenuBarStrings.Eq} contentHandler={ this.setParentContent } contentCode={2} />
+                        <MenuBarItem name={MenuBarStrings.Res} contentHandler={ this.setParentContent } contentCode={3} />
+                        <MenuBarItem name={MenuBarStrings.Voy} contentHandler={ this.setParentContent } contentCode={4} />
+                        <MenuBarItem name={MenuBarStrings.Par} contentHandler={ this.setParentContent } contentCode={5} />
                     </ul>
                 </div>
         );

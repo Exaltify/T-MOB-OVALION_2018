@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import LoginButton from '../LoginButton/LoginButton'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 
 
 export default class Header extends Component {
@@ -34,6 +35,7 @@ export default class Header extends Component {
                <LoginButton refreshApp={ this.state.refreshApp } />
               </div>
               <img className="header-logo-image" src='assets/logo.png' />
+              <LanguageSwitcher refreshApp={ this.state.refreshApp }/>
             </div>
         );
     }
