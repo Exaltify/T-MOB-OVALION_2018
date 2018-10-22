@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 
-//import './Register.css';
+import './Register.css';
 
 export default class Register extends Component {
 
@@ -27,28 +27,29 @@ export default class Register extends Component {
   render() {
     return (
       <div className="login-master-container">
-        <div className="login-title">
-          <p>Bienvenue sur Ovalion !</p>
-        </div>
-        <div className="login-form-container">
-          <form
-            className="login-form"
-            ref={(form) => { this.form = form; return this.form; }}
-            onSubmit={event => event.preventDefault()}
-          >
-            <label htmlFor="email">
-              <input
-                className="login-input"
-                type="email"
-                id="email"
-                name="emailAddress"
-                placeholder="Adresse email"
-                ref={(emailAddress) => {
-                  this.emailAddress = emailAddress;
-                  return this.emailAddress;
-                }}
-              />
-            </label>
+        <div className="login-container">
+          <div className="login-title">
+            <p>Bienvenue sur Ovalion !</p>
+          </div>
+          <div className="login-form-container">
+            <form
+              className="login-form"
+              ref={(form) => { this.form = form; return this.form; }}
+              onSubmit={event => event.preventDefault()}
+            >
+              <label htmlFor="email">
+                <input
+                  className="login-input"
+                  type="email"
+                  id="email"
+                  name="emailAddress"
+                  placeholder="Adresse email"
+                  ref={(emailAddress) => {
+                    this.emailAddress = emailAddress;
+                    return this.emailAddress;
+                  }}
+                />
+              </label>
 
             <label htmlFor="password">
               <input
@@ -73,6 +74,7 @@ export default class Register extends Component {
             </label>
             <button className="login-button-submit" onClick={this.handleSubmit}><p>S'inscrire</p></button>
           </form>
+          </div>
         </div>
       </div>
     );
