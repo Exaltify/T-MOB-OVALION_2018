@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import './Calendrier.css';
 
 
 // Setup the localizer by providing the moment (or globalize) Object
@@ -20,7 +21,7 @@ export default class Calendrier extends Component {
 
   render() {
     return (
-      <div>
+      <div className="calendar-master">
         <BigCalendar
           localizer={this.state.localizer}
           events={this.state.events}
