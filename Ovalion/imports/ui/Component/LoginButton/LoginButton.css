@@ -1,0 +1,14 @@
+.login-button-master {
+    margin-left: 2rem;
+}
+
+.login-button-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-button-container p {
+    margin: 0 0 0 0.5rem;
+    padding: 3px 0 0;
+}

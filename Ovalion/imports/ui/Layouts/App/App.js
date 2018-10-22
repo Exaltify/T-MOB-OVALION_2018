@@ -16,11 +16,16 @@ export default class App extends Component {
     this.setState({ menuBarActive: !this.state.menuBarActive});
   }
 
+  refreshApp = () => {
+    console.log("force");
+    this.forceUpdate();
+  }
+
   render() {
     return (
       <div className="app-container">
 
-        <Header menuBarHandler={ this.showMenuBar } />
+        <Header menuBarHandler={ this.showMenuBar } refreshApp={ this.refreshApp } />
         <MainContainer menuBarActive={ this.state.menuBarActive }/>
       </div>
     );

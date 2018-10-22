@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AccountsUIWrapper from '../AccountsUIWrapper.js';
 import './Header.css';
+import LoginButton from '../LoginButton/LoginButton'
 
 
 export default class Header extends Component {
@@ -10,6 +10,7 @@ export default class Header extends Component {
     this.state = {
       showMenubar: this.props.menuBarHandler,
       active: false,
+      refreshApp: this.props.refreshApp,
     };
   }
 
@@ -30,11 +31,9 @@ export default class Header extends Component {
                 </span>
               </button>
               <div className="header-login-button">
-               <AccountsUIWrapper />
+               <LoginButton refreshApp={ this.state.refreshApp } />
               </div>
-              <div className="header-logo-container">
-                <img className="header-logo-image" src='assets/logo.png' />
-              </div>
+              <img className="header-logo-image" src='assets/logo.png' />
             </div>
         );
     }

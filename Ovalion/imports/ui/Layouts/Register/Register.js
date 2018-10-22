@@ -26,20 +26,20 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div className="login-master-container">
-        <div className="login-container">
-          <div className="login-title">
+      <div className="register-master-container">
+        <div className="register-container">
+          <div className="register-title">
             <p>Bienvenue sur Ovalion !</p>
           </div>
-          <div className="login-form-container">
+          <div className="register-form-container">
             <form
-              className="login-form"
+              className="register-form"
               ref={(form) => { this.form = form; return this.form; }}
               onSubmit={event => event.preventDefault()}
             >
               <label htmlFor="email">
                 <input
-                  className="login-input"
+                  className="register-input"
                   type="email"
                   id="email"
                   name="emailAddress"
@@ -53,7 +53,7 @@ export default class Register extends Component {
 
             <label htmlFor="password">
               <input
-                className="login-input"
+                className="register-input"
                 id="password"
                 type="password"
                 name="password"
@@ -64,7 +64,7 @@ export default class Register extends Component {
 
             <label htmlFor="city">
               <input
-                className="login-input"
+                className="register-input"
                 id="city"
                 type="text"
                 name="city"
@@ -72,7 +72,7 @@ export default class Register extends Component {
                 ref={(password) => { this.city = city; return this.city; }}
               />
             </label>
-            <button className="login-button-submit" onClick={this.handleSubmit}><p>S'inscrire</p></button>
+            <button className="register-button-submit" onClick={this.handleSubmit}><p>S'inscrire</p></button>
           </form>
           </div>
         </div>

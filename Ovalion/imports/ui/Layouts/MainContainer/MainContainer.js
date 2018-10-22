@@ -38,6 +38,9 @@ export default class MainContainer extends Component {
   }
 
   getContent = () => {
+    if (!Meteor.userId())
+      return <Register />;
+
     switch (this.state.content) {
       case CONTENT.HOME:
         break;
