@@ -5,7 +5,7 @@ export default class Reserver extends Component {
 
     render() {
         return (
-            <div className="content-container">RESERVER</div>
+            <div className="global-content-container">RESERVER</div>
         );
     }
 }

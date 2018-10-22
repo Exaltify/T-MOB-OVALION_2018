@@ -5,7 +5,7 @@ export default class MesVoyages extends Component {
 
     render() {
         return (
-            <div className="content-container">MES VOYAGES</div>
+            <div className="global-content-container">MES VOYAGES</div>
         );
     }
 }

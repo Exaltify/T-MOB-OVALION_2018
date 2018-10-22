@@ -1,0 +1,22 @@
+.header-main-container {
+    display: flex;
+    padding: 10px;
+    min-height: 12vh;
+    max-height: 12vh;
+    border-bottom: solid 1px rgba(58, 156, 222, 0.4);
+    background: transparent;
+}
+
+.header-login-button {
+    padding-top: 5vh;
+}
+
+.header-logo-container {
+    display: inline-block;
+    text-align: center;
+    flex-grow: 100;
+}
+
+.header-logo-image {
+    max-height: 12vh;
+}

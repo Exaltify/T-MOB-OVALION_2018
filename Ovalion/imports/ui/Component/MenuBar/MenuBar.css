@@ -1,0 +1,17 @@
+.menu-bar {
+    position: absolute;
+    float: left;
+    overflow: hidden;
+    width: 0vw;
+    height: 85vh;
+    -webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+    text-align: left;
+    border-left: none;
+    background-color: rgba(58, 156, 222, 0.4);
+}
+
+.active {
+    border-right: 1px solid rgba(177, 177, 177, 0.7);
+    width: 20vw;
+}
