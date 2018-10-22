@@ -1,9 +1,8 @@
 .menu-bar {
-    position: absolute;
     float: left;
     overflow: hidden;
     width: 0vw;
-    height: 85vh;
+    height: 100%;
     -webkit-transition: width 0.5s; /* Safari */
     transition: width 0.5s;
     text-align: left;

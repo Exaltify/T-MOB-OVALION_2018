@@ -6,6 +6,7 @@ import MesVoyages from "../../Layouts/MesVoyages/MesVoyages";
 import MonEquipe from "../../Layouts/MonEquipe/MonEquipe";
 import Parametres from "../../Layouts/Parametres/Parametres";
 import Reserver from "../../Layouts/Reserver/Reserver";
+import Register from '../Register/Register'
 
 let CONTENT = {
   HOME: 0,
@@ -14,15 +15,17 @@ let CONTENT = {
   RESERVER: 3,
   VOYAGE: 4,
   PARAMS: 5,
+  REGISTER: 6,
 };
 
 export default class MainContainer extends Component {
 
   constructor(props) {
     super(props);
+    let content = (Meteor.userId()) ? CONTENT.HOME : CONTENT.REGISTER;
     this.state = {
       menuBarActive: this.props.menuBarActive,
-      content: CONTENT.HOME,
+      content: content,
     };
   }
 
@@ -48,6 +51,8 @@ export default class MainContainer extends Component {
         return <Parametres/>;
       case CONTENT.RESERVER:
         return <Reserver/>;
+      case CONTENT.REGISTER:
+        return <Register />;
       default:
         break;
     }
