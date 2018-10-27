@@ -23,7 +23,9 @@ export default class MenuBarItem extends Component {
 
     render() {
         return (
-            <li onClick={ this.setContent }>{ this.state.name }</li>
+            <div className='menubaritem-master' onClick={ this.setContent }>
+              <p>{ this.state.name }</p>
+            </div>
         );
     }
 }

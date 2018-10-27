@@ -30,13 +30,13 @@ export default class MenuBar extends Component {
       let menuBarCssClass = (this.state.active) ? "menu-bar active" : "menu-bar";
         return (
                 <div className={ menuBarCssClass }>
-                    <ul>
+                    <div>
                         <MenuBarItem name={this.state.localizedString.Cal } contentHandler={ this.setParentContent } contentCode={1} />
                         <MenuBarItem name={this.state.localizedString.Eq} contentHandler={ this.setParentContent } contentCode={2} />
                         <MenuBarItem name={this.state.localizedString.Res} contentHandler={ this.setParentContent } contentCode={3} />
                         <MenuBarItem name={this.state.localizedString.Voy} contentHandler={ this.setParentContent } contentCode={4} />
                         <MenuBarItem name={this.state.localizedString.Par} contentHandler={ this.setParentContent } contentCode={5} />
-                    </ul>
+                    </div>
                 </div>
         );
     }

@@ -1,13 +1,13 @@
 html{
 	height: 100%;
     background: linear-gradient(90deg, rgba(58, 156, 222, 0.4) 15%, white 30%);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
   height: calc(100% - 10px);
   padding: 0px;
-	margin: 5px;
-  font-family: sans-serif;
+  margin: 5px;
 }
 
 #render-target{
