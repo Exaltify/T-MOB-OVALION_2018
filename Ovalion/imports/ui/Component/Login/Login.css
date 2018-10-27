@@ -1,5 +1,5 @@
 .login-master-container {
-    position:absolute;
+    position:fixed;
     top:5rem;
     display:none;
     background-color: white;

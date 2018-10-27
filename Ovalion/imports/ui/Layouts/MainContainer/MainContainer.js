@@ -26,15 +26,20 @@ export default class MainContainer extends Component {
     this.state = {
       menuBarActive: this.props.menuBarActive,
       content: content,
+      localizedString: this.props.localizedString,
     };
   }
 
   componentWillReceiveProps(props) {
-    this.setState({ menuBarActive: props.menuBarActive});
+    this.setState({ menuBarActive: props.menuBarActive, localizedString: props.localizedString});
   }
 
   setContent = (content) => {
     this.setState({ content: content });
+  }
+
+  refreshLanguage = () => {
+    this.menuBarChild.refreshLanguage();
   }
 
   getContent = () => {
@@ -65,7 +70,7 @@ export default class MainContainer extends Component {
     return(
       <div className="main">
         <div className="main-container">
-          <MenuBar active={ this.state.menuBarActive } contentHandler={ this.setContent }/>
+          <MenuBar localizedString={ this.state.localizedString } active={ this.state.menuBarActive } contentHandler={ this.setContent }/>
           <div className="main-content">
             { this.getContent() }
           </div>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import MenuBarItem from '../MenuBarItem/MenuBarItem';
 import "./MenuBar.css";
-import LocalizedStrings from 'react-localization';
-import { MenuBarStrings } from '../../../localization/strings';
 
 export default class MenuBar extends Component {
 
@@ -12,28 +10,32 @@ export default class MenuBar extends Component {
         this.state = {
           active: this.props.active,
           setContent: this.props.contentHandler,
+          localizedString: this.props.localizedString.Menubar,
         };
     }
 
   componentWillReceiveProps(props) {
-    this.setState({ active: props.active});
+      this.setState({ active: props.active, localizedString: props.localizedString.Menubar }, this.refreshLanguage(props.localizedString));
   }
 
   setParentContent = (content) => {
       this.state.setContent(content);
   }
 
+  refreshLanguage(localizedString) {
+      this.setState({ localizedString: localizedString.Menubar });
+  }
 
   render() {
       let menuBarCssClass = (this.state.active) ? "menu-bar active" : "menu-bar";
         return (
                 <div className={ menuBarCssClass }>
                     <ul>
-                        <MenuBarItem name={MenuBarStrings.Cal} contentHandler={ this.setParentContent } contentCode={1} />
-                        <MenuBarItem name={MenuBarStrings.Eq} contentHandler={ this.setParentContent } contentCode={2} />
-                        <MenuBarItem name={MenuBarStrings.Res} contentHandler={ this.setParentContent } contentCode={3} />
-                        <MenuBarItem name={MenuBarStrings.Voy} contentHandler={ this.setParentContent } contentCode={4} />
-                        <MenuBarItem name={MenuBarStrings.Par} contentHandler={ this.setParentContent } contentCode={5} />
+                        <MenuBarItem name={this.state.localizedString.Cal } contentHandler={ this.setParentContent } contentCode={1} />
+                        <MenuBarItem name={this.state.localizedString.Eq} contentHandler={ this.setParentContent } contentCode={2} />
+                        <MenuBarItem name={this.state.localizedString.Res} contentHandler={ this.setParentContent } contentCode={3} />
+                        <MenuBarItem name={this.state.localizedString.Voy} contentHandler={ this.setParentContent } contentCode={4} />
+                        <MenuBarItem name={this.state.localizedString.Par} contentHandler={ this.setParentContent } contentCode={5} />
                     </ul>
                 </div>
         );

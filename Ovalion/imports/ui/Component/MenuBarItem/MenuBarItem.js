@@ -13,6 +13,10 @@ export default class MenuBarItem extends Component {
 
     }
 
+    componentWillReceiveProps(props) {
+      this.setState({ name: props.name });
+    }
+
     setContent = () => {
       this.state.setContent(this.state.contentCode);
     }

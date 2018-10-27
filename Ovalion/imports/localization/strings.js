@@ -1,29 +1,21 @@
-import LocalizedStrings from "react-localization";
 
-export let MenuBarStrings = new LocalizedStrings({
+export let localizedString = {
   En:{
-    Cal:"Calendar",
-    Eq:"My team",
-    Res:"Reservation",
-    Voy:"My trips",
-    Par:"Parameters",
+    Menubar: {
+      Cal: "Calendar",
+      Eq: "My team",
+      Res: "Reservation",
+      Voy: "My trips",
+      Par: "Parameters",
+    }
   },
   Fr: {
-    Cal:"Calendrier",
-    Eq:"Mon equipe",
-    Res:"Reservation",
-    Voy:"Mes voyages",
-    Par:"Paramètres",
+    Menubar: {
+      Cal: "Calendrier",
+      Eq: "Mon equipe",
+      Res: "Reservation",
+      Voy: "Mes voyages",
+      Par: "Paramètres",
+    }
   }
-});
-
-let strings = [MenuBarStrings];
-
-
-export let updateAllStrings = (identifier) => {
-  console.log('lol');
-  console.log(identifier);
-  for (let str of strings) {
-    str.setLanguage(identifier);
-  }
-}
+};

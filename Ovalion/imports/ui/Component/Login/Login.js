@@ -9,6 +9,7 @@ export default class Login extends Component {
     this.state = {
       active: this.props.active,
       refreshApp: props.refreshApp,
+      setInactive: props.setInactive,
     }
   }
 
@@ -29,7 +30,7 @@ export default class Login extends Component {
       }
       else {
         console.log('connection success!');
-        this.setState({ active: false }, this.state.refreshApp());
+        this.setState({ active: false }, this.state.setInactive(), this.state.refreshApp());
       }
     });
   }

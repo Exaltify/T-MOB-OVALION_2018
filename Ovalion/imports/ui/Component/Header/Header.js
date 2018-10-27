@@ -12,6 +12,7 @@ export default class Header extends Component {
       showMenubar: this.props.menuBarHandler,
       active: false,
       refreshApp: this.props.refreshApp,
+      refreshLanguage: this.props.refreshLanguage,
     };
   }
 
@@ -35,7 +36,7 @@ export default class Header extends Component {
                <LoginButton refreshApp={ this.state.refreshApp } />
               </div>
               <img className="header-logo-image" src='assets/logo.png' />
-              <LanguageSwitcher refreshApp={ this.state.refreshApp }/>
+              <LanguageSwitcher refreshLanguage={ this.state.refreshLanguage } refreshApp={ this.state.refreshApp }/>
             </div>
         );
     }

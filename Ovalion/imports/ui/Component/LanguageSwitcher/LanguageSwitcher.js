@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './LanguageSwitcher.css';
-import { updateAllStrings } from "../../../localization/strings";
 
 
 export default class MenuBar extends Component {
@@ -10,6 +9,7 @@ export default class MenuBar extends Component {
     this.state = {
       active: 'Fr',
       refreshApp: this.props.refreshApp,
+      refreshLanguage: this.props.refreshLanguage,
     };
   }
 
@@ -27,7 +27,7 @@ export default class MenuBar extends Component {
   }
 
   setLocalizationString = () => {
-    updateAllStrings(this.state.active);
+    this.state.refreshLanguage(this.state.active);
     this.state.refreshApp();
   }
 
