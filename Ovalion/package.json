@@ -8,7 +8,9 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
+    "@babel/core": "^7.1.2",
     "@babel/runtime": "7.0.0-beta.55",
+    "babel": "^6.23.0",
     "bert": "^1.0.0",
     "gradle": "^1.0.9",
     "meteor-node-stubs": "^0.4.1",
@@ -17,6 +19,8 @@
     "react-big-calendar": "^0.20.1",
     "react-dom": "^16.6.0",
     "react-localization": "^1.0.13",
+    "react-switch": "^3.0.4",
+    "react-switch-button": "^2.3.5",
     "simple-schema": "^1.1.0"
   },
   "meteor": {

@@ -94,6 +94,8 @@ let refTeamsCity = [
 
 if (doInsert) {
 
+  modelTeam.remove({});
+
   for (let i = 0, ii = refTeamsName.length; i < ii; i++) {
     let logoSrc = 'assets/logo/' + refTeamsLogo[i] + '.png';
     let team = { name: refTeamsName[i], logoSrc, city: refTeamsCity[i], score: 0 };

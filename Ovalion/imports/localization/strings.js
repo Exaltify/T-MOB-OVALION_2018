@@ -10,6 +10,9 @@ export let localizedString = {
     LoginButton: {
       co: 'Connect',
       disco: 'Disconnect',
+    },
+    Parametres: {
+      title: 'Chose your team'
     }
   },
   Fr: {
@@ -23,6 +26,9 @@ export let localizedString = {
     LoginButton: {
       co: 'Se connecter',
       disco: 'Se déconnecter',
+    },
+    Parametres: {
+      title: 'Choisissez votre équipe',
     }
   }
 };

@@ -17,6 +17,7 @@
     flex-grow: 100;
     float: right;
     text-align:center;
+    overflow-y: scroll;
 }
 
 .main-content-active {

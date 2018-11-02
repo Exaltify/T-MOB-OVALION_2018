@@ -52,7 +52,7 @@ export default class MainContainer extends Component {
       case CONTENT.EQUIPE:
         return <MonEquipe/>;
       case CONTENT.PARAMS:
-        return <Parametres/>;
+        return <Parametres localizedString={ this.state.localizedString } />;
       case CONTENT.RESERVER:
         return <Reserver/>;
       case CONTENT.REGISTER:

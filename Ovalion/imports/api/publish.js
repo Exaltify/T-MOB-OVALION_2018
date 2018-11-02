@@ -71,4 +71,12 @@ Meteor.methods({
     Meteor.users.remove({_id: userId});
   },
 
+  'user.setTeam': (userId, teamId) => {
+    let newProfile = Meteor.users.find({_id: userId}).fetch()[0].profile;
+    newProfile.team = teamId;
+    Meteor.users.update(userId, { $set: { profile: newProfile } });
+
+    console.log('team of user ' + userId + ' changed to ' + teamId);
+  },
+
 });
