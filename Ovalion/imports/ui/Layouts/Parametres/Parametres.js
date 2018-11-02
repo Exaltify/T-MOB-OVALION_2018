@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 import dbTeam from '../../../api/model/modelTeam'
 import TeamContainer from '../../Component/TeamContainer/TeamContainer'
+import './Parametres.css';
 
 class Parametres extends Component {
 
@@ -18,13 +19,14 @@ class Parametres extends Component {
 
     render() {
         return (
-          <div className="parameters-master">
-            <p>Parametres</p>
+          <div className="parameter-master">
+            <div className="parameter-team-container">
             {
               this.state.teams.map( ( iTeam ) => {
-                return <TeamContainer team={ iTeam } showScore={ false } onClickFn = { this.setUserTeam.bind(this, iTeam.name) } />
+                return <TeamContainer key={ iTeam.id } team={ iTeam } showScore={ false } onClickFn = { this.setUserTeam.bind(this, iTeam.name) } />
               })
             }
+            </div>
           </div>
         );
     }

@@ -1,6 +1,6 @@
 import modelTeam from '../../imports/api/model/modelTeam';
 
-let doInsert = true;
+let doInsert = false;
 
 let refTeamsName = [
   "SPORTING UNION AGEN LOT-ET-GARONNE",
@@ -95,7 +95,7 @@ let refTeamsCity = [
 if (doInsert) {
 
   for (let i = 0, ii = refTeamsName.length; i < ii; i++) {
-    let logoSrc = 'assets/' + refTeamsLogo[i] + '.png';
+    let logoSrc = 'assets/logo/' + refTeamsLogo[i] + '.png';
     let team = { name: refTeamsName[i], logoSrc, city: refTeamsCity[i], score: 0 };
     modelTeam.insert(team);
     console.log('Team ' + team + ' inserted.');

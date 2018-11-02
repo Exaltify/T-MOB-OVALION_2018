@@ -63,11 +63,12 @@ export default class MainContainer extends Component {
   }
 
   render() {
+    let mainContentClassName = (this.state.menuBarActive) ? "main-content main-content-active" : "main-content";
     return(
       <div className="main">
         <div className="main-container">
           <MenuBar localizedString={ this.state.localizedString } active={ this.state.menuBarActive } contentHandler={ this.setContent }/>
-          <div className="main-content">
+          <div className={ mainContentClassName }>
             { this.getContent() }
           </div>
         </div>

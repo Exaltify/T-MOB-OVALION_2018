@@ -1,5 +1,9 @@
-.parameters-master {
+.parameter-master {
+}
+
+.parameter-team-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
