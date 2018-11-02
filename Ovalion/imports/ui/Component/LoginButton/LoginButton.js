@@ -10,6 +10,7 @@ export default class LoginButton extends Component {
     this.state = {
       active: false,
       refreshApp: this.props.refreshApp,
+      localizedString: this.props.localizedString.LoginButton,
     }
   }
 
@@ -20,7 +21,7 @@ export default class LoginButton extends Component {
       return;
     }
     this.setState({ active: active });
-  }
+    }
 
   setInactive = () => {
     this.setState({ active: false });

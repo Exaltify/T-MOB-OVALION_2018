@@ -30,7 +30,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <Header refreshLanguage={ this.refreshLanguage } menuBarHandler={ this.showMenuBar } refreshApp={ this.refreshApp } />
+        <Header localizedString={ this.state.localizedString } refreshLanguage={ this.refreshLanguage } menuBarHandler={ this.showMenuBar } refreshApp={ this.refreshApp } />
         <MainContainer localizedString={ this.state.localizedString } menuBarActive={ this.state.menuBarActive }/>
       </div>
     );

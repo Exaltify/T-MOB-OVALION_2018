@@ -13,6 +13,7 @@ export default class Header extends Component {
       active: false,
       refreshApp: this.props.refreshApp,
       refreshLanguage: this.props.refreshLanguage,
+      localizedString: this.props.localizedString,
     };
   }
 
@@ -33,7 +34,7 @@ export default class Header extends Component {
                 </span>
               </button>
               <div className="header-login-button">
-               <LoginButton refreshApp={ this.state.refreshApp } />
+               <LoginButton localizedString={ this.state.localizedString } refreshApp={ this.state.refreshApp } />
               </div>
               <img className="header-logo-image" src='assets/logo.png' />
               <LanguageSwitcher refreshLanguage={ this.state.refreshLanguage } refreshApp={ this.state.refreshApp }/>

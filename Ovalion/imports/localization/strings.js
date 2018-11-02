@@ -6,6 +6,10 @@ export let localizedString = {
       Res: "Reservation",
       Voy: "My trips",
       Par: "Parameters",
+    },
+    LoginButton: {
+      co: 'Connect',
+      disco: 'Disconnect',
     }
   },
   Fr: {
@@ -15,6 +19,10 @@ export let localizedString = {
       Res: "Reservation",
       Voy: "Mes voyages",
       Par: "Paramètres",
+    },
+    LoginButton: {
+      co: 'Se connecter',
+      disco: 'Se déconnecter',
     }
   }
 };
