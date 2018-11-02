@@ -38,10 +38,6 @@ export default class MainContainer extends Component {
     this.setState({ content: content });
   }
 
-  refreshLanguage = () => {
-    this.menuBarChild.refreshLanguage();
-  }
-
   getContent = () => {
     if (!Meteor.userId())
       return <Register />;
