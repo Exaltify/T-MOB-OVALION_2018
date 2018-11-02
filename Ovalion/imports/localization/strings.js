@@ -1,4 +1,3 @@
-
 export let localizedString = {
   En:{
     Menubar: {

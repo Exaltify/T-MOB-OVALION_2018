@@ -7,11 +7,11 @@ import createAccount from './accounts'
 
 if (Meteor.isServer) {
 
-  Meteor.publish('match', () => [
+  Meteor.publish('matchs', () => [
     dbMatch.find(),
   ]);
 
-  Meteor.publish('team', () => [
+  Meteor.publish('teams', () => [
     dbTeam.find(),
   ])
 }

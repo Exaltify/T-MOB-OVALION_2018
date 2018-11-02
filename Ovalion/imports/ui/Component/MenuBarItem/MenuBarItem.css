@@ -1,5 +1,6 @@
 .menubaritem-master {
     border-bottom: solid 1px rgba(58, 156, 222, 0.4);
+    cursor: pointer;
 }
 
 .menubaritem-master p {
