@@ -12,7 +12,11 @@ export let localizedString = {
       disco: 'Disconnect',
     },
     Parametres: {
-      title: 'Chose your team'
+      title: 'Chose your team',
+      follow: 'You are following',
+      followAll: 'Follow all teams',
+      allteams: 'all teams',
+      noFollow: 'You are not following any team',
     }
   },
   Fr: {
@@ -29,6 +33,10 @@ export let localizedString = {
     },
     Parametres: {
       title: 'Choisissez votre équipe',
+      follow: 'Vous suivez',
+      followAll: 'Suivre toutes les équipes',
+      allteams: 'toutes les équipes',
+      noFollow: 'Vous ne suivez aucune équipe',
     }
   }
 };

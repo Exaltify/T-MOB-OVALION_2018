@@ -7,3 +7,22 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.parameter-follow-string {
+    font-size: 20px;
+}
+
+.parameter-title {
+    margin-bottom: 3rem;
+}
+
+.parameter-switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.parameter-switch-label {
+    height: 100%;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}

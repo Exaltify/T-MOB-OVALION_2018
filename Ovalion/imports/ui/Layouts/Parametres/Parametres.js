@@ -14,12 +14,12 @@ class Parametres extends Component {
         localizedString: this.props.localizedString.Parametres,
         userId: Meteor.userId(),
         team: this.getMyTeam(),
-        checked: false,
+        checked: this.getMyTeam() === false,
       }
     }
 
     componentWillReceiveProps(props) {
-      this.setState({ teams: props.teams, localizedString: props.localizedString.Parametres, team: this.getMyTeam() });
+      this.setState({ teams: props.teams, localizedString: props.localizedString.Parametres, team: this.getMyTeam(), checked: this.getMyTeam() === false });
     }
 
     setUserTeam = (teamId) => {
@@ -27,52 +27,72 @@ class Parametres extends Component {
         this.setState({ userId: Meteor.userId() }, this.setUserTeam(teamId));
         return;
       }
+      if (teamId === 0)
+        this.setState({ checked: true });
+      else
+        this.setState({ checked: false });
       Meteor.call('user.setTeam', this.state.userId, teamId, this.setState.bind(this, ({ team: this.getMyTeam(teamId)})));
     }
 
     getMyTeam = (pTeamId) => {
-      let teamId = (pTeamId) ? pTeamId : Meteor.user().profile.team;
-      console.log(teamId);
-      if (teamId === -1)
+      let teamId = (pTeamId !== undefined) ? pTeamId : Meteor.user().profile.team;
+      if (teamId === 0)
         return false;
+      else if (teamId === -1)
+        return null;
       for (let team of this.props.teams) {
         if (team._id === teamId)
           return team;
       }
-      this.render();
     }
 
     handleChange = () => {
-      this.setState({ checked: !this.state.checked });
+      this.setState({ checked: !this.state.checked }, () => {
+        if (this.state.checked)
+          this.setUserTeam(0);
+        else
+          this.setUserTeam(-1);
+      });
     }
 
     render() {
         let team = this.state.team;
+        let followString;
+        if (team === null) {
+          followString = this.state.localizedString.noFollow + '.';
+        }
+        else if (team === false) {
+          followString = this.state.localizedString.follow +  ' ' + this.state.localizedString.allteams;
+        }
+        else {
+          followString = this.state.localizedString.follow + ' ' + this.state.team.name;
+        }
         return (
           <div className="parameter-master">
-            <p>{ this.state.localizedString.title }</p>
-            <label htmlFor="material-switch">
-              <span>Suivre toutes les équipes</span>
+            <p className="parameter-follow-string">{ followString } </p>
+            <p className="parameter-title">{ this.state.localizedString.title }</p>
+            <div className="parameter-switch-container">
+              <span className="parameter-switch-label">{ this.state.localizedString.followAll }</span>
               <Switch
                 checked={this.state.checked}
                 onChange={this.handleChange}
                 onColor="#86d3ff"
                 onHandleColor="#2693e6"
-                handleDiameter={30}
+                handleDiameter={15}
                 uncheckedIcon={false}
                 checkedIcon={false}
                 boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
                 activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
-                height={20}
-                width={48}
+                height={25}
+                width={54}
                 className="react-switch"
                 id="material-switch"
               />
-            </label>
+            </div>
             <div className="parameter-team-container">
             {
               this.state.teams.map( ( iTeam ) => {
-                if (team && team._id === iTeam._id) {
+                if ((team && team._id === iTeam._id) || team === false) {
                   return <TeamContainer key={iTeam._id}
                                         team={iTeam}
                                         showScore={false}
