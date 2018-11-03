@@ -1,0 +1,30 @@
+.monEquipe-master {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.monEquipe-tabs-master {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px rgba(58, 156, 222, 0.4);
+    height: 20%;
+
+}
+
+.monEquipe-tab {
+    text-align: center;
+    flex-grow: 1;
+    border-right: solid 1px rgba(58, 156, 222, 0.4);
+    cursor: pointer;
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.tab-active {
+    background-color: rgba(58, 156, 222, 0.2);
+}
+
+.monEquipe-tab:last-of-type {
+    border-right: none;
+}

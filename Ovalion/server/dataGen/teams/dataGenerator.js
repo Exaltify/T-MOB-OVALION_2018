@@ -1,4 +1,4 @@
-import modelTeam from '../../imports/api/model/modelTeam';
+import modelTeam from '../../../imports/api/model/modelTeam';
 
 let doInsert = false;
 
@@ -92,13 +92,43 @@ let refTeamsCity = [
   "Toulouse",
 ]
 
+let refStadiumName = [
+  "Armandie",
+
+  "Jacques Chaban-Delmas",
+
+  "Pierre Fabre",
+
+  "Parc des Sports Marcel Michelin",
+
+  "des Alpes",
+
+  "Marcel Deflandre",
+
+  "MATMUT Stadium",
+
+  "GGL Stadium",
+
+  "Jean Bouin",
+
+  "du Hameau",
+
+  "Aimé Giral",
+
+  "Paris La Défense Arena",
+
+  "Mayol",
+
+  "Ernest Wallon",
+]
+
 if (doInsert) {
 
   modelTeam.remove({});
 
   for (let i = 0, ii = refTeamsName.length; i < ii; i++) {
     let logoSrc = 'assets/logo/' + refTeamsLogo[i] + '.png';
-    let team = { name: refTeamsName[i], logoSrc, city: refTeamsCity[i], score: 0 };
+    let team = { name: refTeamsName[i], logoSrc, city: refTeamsCity[i], score: 0, stadiumName: refStadiumName[i] };
     modelTeam.insert(team);
     console.log('Team ' + team + ' inserted.');
   }

@@ -17,7 +17,12 @@ export let localizedString = {
       followAll: 'Follow all teams',
       allteams: 'all teams',
       noFollow: 'You are not following any team',
-    }
+    },
+    MonEquipe: {
+      rank: 'Ranking',
+      history: 'Matches history',
+      equipe: 'Team',
+    },
   },
   Fr: {
     Menubar: {
@@ -37,6 +42,11 @@ export let localizedString = {
       followAll: 'Suivre toutes les équipes',
       allteams: 'toutes les équipes',
       noFollow: 'Vous ne suivez aucune équipe',
-    }
+    },
+    MonEquipe: {
+      rank: 'Classement',
+      history: 'Historique des matchs',
+      equipe: 'Equipe',
+    },
   }
 };

@@ -7,6 +7,7 @@ const modelTeamSchema = new SimpleSchema({
   logoSrc: { type: String },
   city: { type: String },
   score: { type: Number },
+  stadiumName: { type: String },
 });
 
 modelTeam.schema = modelTeamSchema;

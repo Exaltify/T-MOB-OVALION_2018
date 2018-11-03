@@ -50,7 +50,7 @@ export default class MainContainer extends Component {
       case CONTENT.VOYAGE:
         return <MesVoyages/>;
       case CONTENT.EQUIPE:
-        return <MonEquipe/>;
+        return <MonEquipe localizedString={ this.state.localizedString }/>;
       case CONTENT.PARAMS:
         return <Parametres localizedString={ this.state.localizedString } />;
       case CONTENT.RESERVER:

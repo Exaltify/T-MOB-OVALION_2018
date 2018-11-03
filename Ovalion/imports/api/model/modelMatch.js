@@ -5,11 +5,10 @@ const modelmatch = new Mongo.Collection('Match');
 const modelmatchSchema = new SimpleSchema({
   homeTeam: { type: String },
   awayTeam: { type: String },
-  date: { type: Date },
+  date: { type: Number },
   result: { type: [Number] },
   cityLocation: { type: String },
   stadiumName: { type: String },
-
 });
 
 modelmatch.schema = modelmatchSchema;
