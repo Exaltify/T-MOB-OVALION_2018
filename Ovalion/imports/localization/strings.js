@@ -11,6 +11,19 @@ export let localizedString = {
       co: 'Connect',
       disco: 'Disconnect',
     },
+    Register: {
+      bvn: 'Welcome to Ovalion !',
+      addr: 'Email',
+      mdp: 'Password',
+      city: 'City',
+      reg: 'Register',
+    },
+    Login: {
+      log: 'Connect',
+      addr: 'Email',
+      mdp: 'Password',
+    },
+    Calendar:{},
     Parametres: {
       title: 'Chose your team',
       follow: 'You are following',
@@ -35,6 +48,32 @@ export let localizedString = {
     LoginButton: {
       co: 'Se connecter',
       disco: 'Se déconnecter',
+    },
+    Register: {
+      bvn: 'Bienvenue sur Ovalion !',
+      addr: 'Adresse email',
+      mdp: 'Mot de passe',
+      city: 'Ville',
+      reg: 'S\'inscrire',
+    },
+    Login: {
+      log: 'Se connecter',
+      addr: 'Adresse email',
+      mdp: 'Mot de passe',
+    },
+    Calendar: {
+      allDay: 'journée',
+      previous: 'précédent',
+      next: 'suivant',
+      today: 'aujourd\'hui',
+      month: 'mois',
+      week: 'semaine',
+      day: 'jour',
+      agenda: 'Agenda',
+      date: 'date',
+      time: 'heure',
+      event: 'événement', // Or anything you want
+      showMore: total => `+ ${total} événement(s) supplémentaire(s)`
     },
     Parametres: {
       title: 'Choisissez votre équipe',

@@ -14,6 +14,10 @@ export default class LoginButton extends Component {
     }
   }
 
+  componentWillReceiveProps(props) {
+    this.setState({ localizedString: props.localizedString.LoginButton })
+  }
+
   showLoginPopup = (active) => {
     if (Meteor.userId()) {
       Meteor.logout(this.state.refreshApp);
@@ -28,14 +32,14 @@ export default class LoginButton extends Component {
   }
 
   render() {
-    let loginText = (Meteor.userId()) ? "Se déconnecter" : "Se connecter";
+    let loginText = (Meteor.userId()) ? this.state.localizedString.disco : this.state.localizedString.co;
     return (
       <div className="login-button-master">
         <div className="login-button-container" onClick={ this.showLoginPopup.bind(this, !this.state.active) } >
           <i className="material-icons">account_box</i>
           <p>{ loginText }</p>
         </div>
-        <Login active={ this.state.active } refreshApp={ this.state.refreshApp } setInactive={ this.setInactive }/>
+        <Login active={ this.state.active } refreshApp={ this.state.refreshApp } setInactive={ this.setInactive } localizedString={ this.props.localizedString } />
       </div>
         );
   }

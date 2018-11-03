@@ -40,13 +40,13 @@ export default class MainContainer extends Component {
 
   getContent = () => {
     if (!Meteor.userId())
-      return <Register />;
+      return <Register localizedString={ this.state.localizedString } />;
 
     switch (this.state.content) {
       case CONTENT.HOME:
         break;
       case CONTENT.CALENDRIER:
-        return <Calendrier/>;
+        return <Calendrier localizedString={ this.state.localizedString } />;
       case CONTENT.VOYAGE:
         return <MesVoyages/>;
       case CONTENT.EQUIPE:

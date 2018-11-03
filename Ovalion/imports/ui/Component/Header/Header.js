@@ -17,6 +17,10 @@ export default class Header extends Component {
     };
   }
 
+  componentWillReceiveProps(props) {
+    this.setState({ localizedString: props.localizedString })
+  }
+
     popMenuBar = () => {
         this.state.showMenubar();
         this.setState({ active: !this.state.active });

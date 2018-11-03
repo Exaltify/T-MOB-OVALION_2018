@@ -10,11 +10,13 @@ export default class Login extends Component {
       active: this.props.active,
       refreshApp: props.refreshApp,
       setInactive: props.setInactive,
+      localizedString: this.props.localizedString.Login,
+
     }
   }
 
   componentWillReceiveProps(props) {
-    this.setState({ active: props.active });
+    this.setState({ active: props.active, localizedString: props.localizedString.Login });
   }
 
 
@@ -45,16 +47,13 @@ export default class Login extends Component {
             ref={(form) => { this.form = form; return this.form; }}
             onSubmit={event => event.preventDefault()}
           >
-            <p>
-              Se connecter
-            </p>
             <label htmlFor="email">
               <input
                 className="login-input"
                 type="email"
                 id="login-email"
                 name="emailAddress"
-                placeholder="Adresse email"
+                placeholder={this.state.localizedString.addr}
                 ref={(emailAddress) => {
                   this.emailAddress = emailAddress;
                   return this.emailAddress;
@@ -68,11 +67,11 @@ export default class Login extends Component {
                 id="login-password"
                 type="password"
                 name="password"
-                placeholder="Mot de passe"
+                placeholder={this.state.localizedString.mdp}
                 ref={(password) => { this.password = password; return this.password; }}
               />
             </label>
-            <button className="login-button-submit" onClick={this.handleSubmit}><p>Se connecter</p></button>
+            <button className="login-button-submit" onClick={this.handleSubmit}><p>{this.state.localizedString.log}</p></button>
           </form>
         </div>
       </div>

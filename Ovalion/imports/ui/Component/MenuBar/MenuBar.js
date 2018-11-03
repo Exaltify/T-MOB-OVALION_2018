@@ -15,15 +15,11 @@ export default class MenuBar extends Component {
     }
 
   componentWillReceiveProps(props) {
-      this.setState({ active: props.active, localizedString: props.localizedString.Menubar }, this.refreshLanguage(props.localizedString));
+      this.setState({ active: props.active, localizedString: props.localizedString.Menubar });
   }
 
   setParentContent = (content) => {
       this.state.setContent(content);
-  }
-
-  refreshLanguage(localizedString) {
-      this.setState({ localizedString: localizedString.Menubar });
   }
 
   render() {

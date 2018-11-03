@@ -7,6 +7,14 @@ export default class Register extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      localizedString: this.props.localizedString.Register,
+    }
+  }
+
+  componentWillReceiveProps(props) {
+    console.log(props);
+    this.setState({ localizedString: props.localizedString.Register })
   }
 
   handleSubmit = () => {
@@ -29,7 +37,7 @@ export default class Register extends Component {
       <div className="register-master-container">
         <div className="register-container">
           <div className="register-title">
-            <p>Bienvenue sur Ovalion !</p>
+            <p>{this.state.localizedString.bvn}</p>
           </div>
           <div className="register-form-container">
             <form
@@ -43,7 +51,7 @@ export default class Register extends Component {
                   type="email"
                   id="email"
                   name="emailAddress"
-                  placeholder="Adresse email"
+                  placeholder={this.state.localizedString.addr}
                   ref={(emailAddress) => {
                     this.emailAddress = emailAddress;
                     return this.emailAddress;
@@ -57,7 +65,7 @@ export default class Register extends Component {
                 id="password"
                 type="password"
                 name="password"
-                placeholder="Mot de passe"
+                placeholder={this.state.localizedString.mdp}
                 ref={(password) => { this.password = password; return this.password; }}
               />
             </label>
@@ -68,11 +76,11 @@ export default class Register extends Component {
                 id="city"
                 type="text"
                 name="city"
-                placeholder="Ville"
+                placeholder={this.state.localizedString.city}
                 ref={(password) => { this.city = city; return this.city; }}
               />
             </label>
-            <button className="register-button-submit" onClick={this.handleSubmit}><p>S'inscrire</p></button>
+            <button className="register-button-submit" onClick={this.handleSubmit}><p>{this.state.localizedString.reg}</p></button>
           </form>
           </div>
         </div>

@@ -124,7 +124,7 @@ let refStadiumName = [
 
 if (doInsert) {
 
-  modelTeam.remove({});
+  modelTeam.remove({})
 
   for (let i = 0, ii = refTeamsName.length; i < ii; i++) {
     let logoSrc = 'assets/logo/' + refTeamsLogo[i] + '.png';
