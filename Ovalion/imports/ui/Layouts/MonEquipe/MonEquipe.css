@@ -1,6 +1,7 @@
 .monEquipe-master {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    position: relative;
 }
 
 .monEquipe-tabs-master {
@@ -8,7 +9,6 @@
     flex-direction: row;
     border-bottom: solid 1px rgba(58, 156, 222, 0.4);
     height: 20%;
-
 }
 
 .monEquipe-tab {
@@ -27,4 +27,29 @@
 
 .monEquipe-tab:last-of-type {
     border-right: none;
+}
+
+.monEquipe-history-header-master {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(58, 156, 222, 0.1);
+}
+
+.monEquipe-history-header-label {
+    color: rgb(58, 156, 222);
+}
+
+.monEquipe-history-header-date {
+    width: 14%;
+    border-right: solid 1px rgba(58, 156, 222, 0.4);
+}
+
+.monEquipe-history-header-team {
+    width: 38%;
+}
+
+.monEquipe-history-header-score {
+    width: 10%;
+    border-right: solid 1px rgba(58, 156, 222, 0.4);
+    border-left: solid 1px rgba(58, 156, 222, 0.4);
 }

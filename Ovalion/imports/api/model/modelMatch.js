@@ -9,6 +9,7 @@ const modelmatchSchema = new SimpleSchema({
   result: { type: [Number] },
   cityLocation: { type: String },
   stadiumName: { type: String },
+  scoreCounted: { type: Boolean },
 });
 
 modelmatch.schema = modelmatchSchema;

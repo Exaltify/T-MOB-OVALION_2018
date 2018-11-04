@@ -2,6 +2,7 @@ import modelMatch from '../../../imports/api/model/modelMatch';
 import modelTeam from '../../../imports/api/model/modelTeam';
 
 let doInsert = false;
+let deleteBeforeInsert = false;
 
 let refIdTeams = modelTeam.find().fetch().map((team) => team._id);
 
@@ -24,8 +25,9 @@ let getRandomTeamsId = () => {
 }
 
 let randomResult = () => {
-  let scHome = getRandomInt(0, 80);
-  let scAway = 80 - scHome;
+  let totalScore = getRandomInt(30, 90);
+  let scHome = getRandomInt(0, totalScore);
+  let scAway = totalScore - scHome;
 
   if ((scHome % 3 === 0 || scHome % 5 === 0 || scHome % 8 === 0)
     && (scAway % 3 === 0 || scAway % 5 === 0 || scAway % 8 === 0)) {
@@ -39,13 +41,14 @@ let randomResult = () => {
 
 if (doInsert) {
 
-  modelMatch.remove({});
+  if (deleteBeforeInsert)
+    modelMatch.remove({});
 
   let possibleHours = ['19', '20', '21', '22'];
   let possibleMins = ['00', '15', '30', '45'];
 
   for (let i = 0; i < 100; i++) {
-    let dateStr = '09/';
+    let dateStr = '10/';
     dateStr += getRandomInt(1, 30).toString() + '/';
     dateStr += '2018 ';
     dateStr += possibleHours[getRandomInt(0, 3)] + ':';
@@ -69,6 +72,7 @@ if (doInsert) {
       result: result,
       cityLocation: cityLocation,
       stadiumName: stadiumName,
+      scoreCounted: false,
     };
 
     modelMatch.insert(match);

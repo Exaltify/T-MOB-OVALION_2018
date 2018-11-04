@@ -1,0 +1,26 @@
+.rankingteamitem-master {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 60px;
+    border-bottom: 1px solid rgba(177, 177, 177, 0.4);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.rankingteamitem-logo-container {
+    width: 30%;
+}
+
+.rankingteamitem-logo {
+    max-height: 40px;
+}
+
+.rankingteamitem-name {
+    width: 40%;
+
+}
+
+.rankingteamitem-score {
+    width: 30%;
+}

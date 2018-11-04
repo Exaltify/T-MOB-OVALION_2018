@@ -35,6 +35,12 @@ export let localizedString = {
       rank: 'Ranking',
       history: 'Matches history',
       equipe: 'Team',
+      noteam: 'You must chose a team to follow before accessing this page',
+      home: 'HOME',
+      away: 'AWAY',
+    },
+    MatchHistoryItem: {
+      localeIdentifier: 'En',
     },
   },
   Fr: {
@@ -86,6 +92,12 @@ export let localizedString = {
       rank: 'Classement',
       history: 'Historique des matchs',
       equipe: 'Equipe',
+      noteam: 'Vous devez suivre une équipe avant d\'accéder à cette page',
+      home: 'DOMICILE',
+      away: 'EXTERIEUR',
+    },
+    MatchHistoryItem: {
+      localeIdentifier: 'Fr',
     },
   }
 };
