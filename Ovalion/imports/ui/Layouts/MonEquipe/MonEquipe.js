@@ -124,6 +124,7 @@ class MonEquipe extends Component {
             </div>
             { this.getCurrentTab() }
           </div>
+
       );
   }
 }
