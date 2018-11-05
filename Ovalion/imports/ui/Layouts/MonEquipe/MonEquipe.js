@@ -47,6 +47,8 @@ class MonEquipe extends Component {
     return userTeam === 0 ? true : (userTeam === match.homeTeam || userTeam === match.awayTeam);
   }
 
+  filterMatchByDate = (match) => match.date < Date.now();
+
   sortTeamByScore = (teamA, teamB) => (teamA.score > teamB.score) ? -1 : ((teamA.score < teamB.score) ? 1 : 0);
 
   getCurrentTab = () => {
@@ -81,7 +83,7 @@ class MonEquipe extends Component {
               </div>
             </div>
 
-            { this.state.matchs.filter(this.filterMatchByTeam).sort(this.sortMatchByDate).map((match) => {
+            { this.state.matchs.filter(this.filterMatchByDate).filter(this.filterMatchByTeam).sort(this.sortMatchByDate).map((match) => {
                 let teamHome = this.getTeamFromId(match.homeTeam);
                 let teamAway = this.getTeamFromId(match.awayTeam);
 

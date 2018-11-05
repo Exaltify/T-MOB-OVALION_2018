@@ -4,7 +4,7 @@ let getFrDateString = (timeStamp) => {
 
   let monthStr = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août',
     'Septembre', 'Octobre', 'Novembre', 'Décembre'];
-  let monthRef = ['', '', '', '', '', '', '', '', 'Sep', 'Oct', '', ''];
+  let monthRef = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   let date = new Date(timeStamp).toString();
   let splitted = date.split(' ');
