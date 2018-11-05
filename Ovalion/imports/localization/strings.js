@@ -42,6 +42,20 @@ export let localizedString = {
     MatchHistoryItem: {
       localeIdentifier: 'En',
     },
+    Reserver: {
+      choseMatch: 'Chose a match',
+      choseTrip: 'Chose a trip',
+      payment: 'Payment',
+      home: 'HOME',
+      away: 'AWAY',
+    },
+    MatchBookingItem: {
+      localeIdentifier: 'En',
+      hometeam: 'Home Team',
+      awayteam: 'Away Team',
+      stade: 'Stadium',
+      chose: 'Chose this match',
+    },
   },
   Fr: {
     Menubar: {
@@ -98,6 +112,20 @@ export let localizedString = {
     },
     MatchHistoryItem: {
       localeIdentifier: 'Fr',
+    },
+    Reserver: {
+      choseMatch: 'Choisir un match',
+      choseTrip: 'Choisir un voyage',
+      payment: 'Paiement',
+      home: 'DOMICILE',
+      away: 'EXTERIEUR',
+    },
+    MatchBookingItem: {
+      localeIdentifier: 'Fr',
+      hometeam: 'Equipe à domicile',
+      awayteam: 'Equipe à l\'extérieur',
+      stade: 'Stade',
+      chose: 'Choisir ce match',
     },
   }
 };

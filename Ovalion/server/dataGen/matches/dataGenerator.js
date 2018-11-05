@@ -48,7 +48,7 @@ if (doInsert) {
   let possibleMins = ['00', '15', '30', '45'];
 
   for (let i = 0; i < 20; i++) {
-    let dateStr = '11/';
+    let dateStr = '12/';
     dateStr += getRandomInt(1, 30).toString() + '/';
     dateStr += '2018 ';
     dateStr += possibleHours[getRandomInt(0, 3)] + ':';

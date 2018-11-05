@@ -1,0 +1,78 @@
+.matchbookingitem-master {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border-bottom: 1px solid rgba(177, 177, 177, 0.4);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.matchbookingitem-master-expanded {
+    background-color: rgba(58, 156, 222, 0.2);
+    flex-direction: column;
+    height: 250px;
+}
+
+.matchbookingitem-date {
+    height: 100%;
+    width: 20%;
+}
+
+.matchbookingitem-date-expanded {
+    border-bottom: 1px solid rgba(177, 177, 177, 0.4);
+    margin-bottom: 1rem;
+}
+
+.matchbookingitem-logo-container {
+    height: 100%;
+    width: 8%;
+}
+
+.matchbookingitem-logo {
+    margin-top: auto;
+    max-height: 40px;
+}
+
+.matchbookingitem-logo-expanded {
+    margin-top: auto;
+    max-height: 40px;
+    margin-left: 1rem;
+}
+
+.matchbookingitem-team {
+    height: 100%;
+    width: 30%;
+}
+
+.matchbookingitem-row-expanded {
+    display: flex;
+    flex-direction: row;
+}
+
+.matchbookingitem-row-expanded p:first-of-type {
+    margin-right: 2rem;
+    width: 30%;
+}
+
+.matchbookingitem-separator {
+    height: 100%;
+    width:5%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.matchbookingitem-row-expanded:last-of-type {
+    border-bottom: 1px solid rgba(177, 177, 177, 0.4);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.matchbookingitem-button {
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    border: solid 1px rgb(58, 156, 222);
+    background-color: rgba(58, 156, 222, 0.7);
+    width: auto;
+    margin: auto;
+}

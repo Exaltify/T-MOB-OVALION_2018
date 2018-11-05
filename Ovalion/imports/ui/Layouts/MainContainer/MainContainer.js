@@ -54,7 +54,7 @@ export default class MainContainer extends Component {
       case CONTENT.PARAMS:
         return <Parametres localizedString={ this.state.localizedString } />;
       case CONTENT.RESERVER:
-        return <Reserver/>;
+        return <Reserver localizedString={ this.state.localizedString } />;
       case CONTENT.REGISTER:
         return <Register />;
       default:
