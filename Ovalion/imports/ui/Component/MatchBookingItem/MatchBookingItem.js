@@ -59,7 +59,7 @@ export default class MatchBookingItem extends Component {
             <p>{ 'Stade ' + this.state.teams[0].stadiumName }</p>
           </div>
           <span className="matchbookingitem-button" onClick={(event) => event.preventDefault()}>{ this.state.localizedString.chose }</span>
-          <p></p>
+          <img className="matchbookingitem-icon" src="assets/icons/expand_less.svg" onClick={ this.expand } />
         </div>
       );
     }

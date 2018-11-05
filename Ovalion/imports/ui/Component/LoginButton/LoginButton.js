@@ -36,7 +36,7 @@ export default class LoginButton extends Component {
     return (
       <div className="login-button-master">
         <div className="login-button-container" onClick={ this.showLoginPopup.bind(this, !this.state.active) } >
-          <i className="material-icons">account_box</i>
+          <img src="assets/icons/account_box.svg" />
           <p>{ loginText }</p>
         </div>
         <Login active={ this.state.active } refreshApp={ this.state.refreshApp } setInactive={ this.setInactive } localizedString={ this.props.localizedString } />
