@@ -40,3 +40,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 500px) {
+    .login-master-container{
+        width: 100%;
+        left: 0;
+    }
+}

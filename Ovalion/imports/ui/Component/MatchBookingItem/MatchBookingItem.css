@@ -1,7 +1,6 @@
 .matchbookingitem-master {
     display: flex;
     flex-direction: row;
-    height: 60px;
     border-bottom: 1px solid rgba(177, 177, 177, 0.4);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -26,7 +25,6 @@
 
 .matchbookingitem-logo-container {
     height: 100%;
-    width: 8%;
 }
 
 .matchbookingitem-logo {
@@ -42,7 +40,6 @@
 
 .matchbookingitem-team {
     height: 100%;
-    width: 30%;
 }
 
 .matchbookingitem-row-expanded {
@@ -80,4 +77,10 @@
 .matchbookingitem-icon {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .matchbookingitem-master{
+        font-size: 5px;
+    }
 }

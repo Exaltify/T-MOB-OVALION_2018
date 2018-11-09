@@ -1,6 +1,6 @@
 .menu-bar {
     float: left;
-    overflow: hidden;
+    overflow: scroll;
     width: 0vw;
     height: 100%;
     -webkit-transition: width 0.5s; /* Safari */

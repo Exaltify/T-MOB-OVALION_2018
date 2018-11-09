@@ -56,7 +56,7 @@ export default class MainContainer extends Component {
       case CONTENT.RESERVER:
         return <Reserver localizedString={ this.state.localizedString } />;
       case CONTENT.REGISTER:
-        return <Register />;
+        return <Register localizedString={ this.state.localizedString } />;
       default:
         break;
     }

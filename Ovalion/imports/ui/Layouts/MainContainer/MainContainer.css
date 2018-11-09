@@ -25,3 +25,9 @@
 .main-content-active {
     width: 70%;
 }
+
+@media screen and (max-width: 500px) {
+    .main-content-active{
+        font-size: 10px;
+    }
+}

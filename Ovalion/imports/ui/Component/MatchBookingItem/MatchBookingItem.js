@@ -28,15 +28,21 @@ export default class MatchBookingItem extends Component {
       return (
         <div className='matchbookingitem-master' onClick={ this.expand }>
           <div className="matchbookingitem-date"><p> {dateStr} </p></div>
-          <div className="matchbookingitem-logo-container">
-            <img className="matchbookingitem-logo" src={this.state.teams[0].logoSrc}/>
+
+          <div className="team-formater">
+            <div className="matchbookingitem-logo-container">
+              <img className="matchbookingitem-logo" src={this.state.teams[0].logoSrc}/>
+            </div>
+            <div className="matchbookingitem-team"><p>{this.state.teams[0].name}</p></div>
           </div>
-          <div className="matchbookingitem-team"><p>{this.state.teams[0].name}</p></div>
-          <div className="matchbookingitem-separator" />
-          <div className="matchbookingitem-team"><p>{this.state.teams[1].name}</p></div>
-          <div className="matchbookingitem-logo-container">
-            <img className="matchbookingitem-logo" src={this.state.teams[1].logoSrc}/>
+
+          <div className="team-formater">
+            <div className="matchbookingitem-logo-container">
+              <img className="matchbookingitem-logo" src={this.state.teams[1].logoSrc}/>
+            </div>
+            <div className="matchbookingitem-team"><p>{this.state.teams[1].name}</p></div>
           </div>
+
         </div>
       );
     }

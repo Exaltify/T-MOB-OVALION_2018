@@ -22,14 +22,18 @@ export default class MatchHistoryItem extends Component {
     return (
       <div className='matchhistoryitem-master'>
         <div className="matchhistoryitem-date"><p> { dateStr } </p></div>
+        <div className="team-formater">
           <div className="matchhistoryitem-logo-container">
-          <img className="matchhistoryitem-logo" src={ this.state.teams[0].logoSrc } />
+            <img className="matchhistoryitem-logo" src={ this.state.teams[0].logoSrc } />
+          </div>
+          <div className="matchhistoryitem-name"><p>{ this.state.teams[0].name }</p></div>
         </div>
-        <div className="matchhistoryitem-name"><p>{ this.state.teams[0].name }</p></div>
         <div className="matchhistoryitem-score"><p>{ this.state.match.result[0] + ' - ' + this.state.match.result[1] }</p> </div>
-        <div className="matchhistoryitem-name"><p>{ this.state.teams[1].name }</p></div>
-        <div className="matchhistoryitem-logo-container">
-          <img className="matchhistoryitem-logo" src={ this.state.teams[1].logoSrc } />
+        <div className="team-formater">
+          <div className="matchhistoryitem-logo-container">
+            <img className="matchhistoryitem-logo" src={ this.state.teams[1].logoSrc } />
+          </div>
+          <div className="matchhistoryitem-name"><p>{ this.state.teams[1].name }</p></div>
         </div>
       </div>
     );

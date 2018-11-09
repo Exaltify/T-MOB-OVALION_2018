@@ -1,6 +1,4 @@
 .monEquipe-master {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     position: relative;
 }
 
@@ -49,7 +47,7 @@
 }
 
 .monEquipe-history-header-score {
-    width: 10%;
+    width: 12%;
     border-right: solid 1px rgba(58, 156, 222, 0.4);
     border-left: solid 1px rgba(58, 156, 222, 0.4);
 }

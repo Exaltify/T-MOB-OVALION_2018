@@ -1,7 +1,6 @@
 .matchhistoryitem-master {
     display: flex;
     flex-direction: row;
-    height: 60px;
     border-bottom: 1px solid rgba(177, 177, 177, 0.4);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -13,8 +12,6 @@
 }
 
 .matchhistoryitem-logo-container {
-    height: 100%;
-    width: 8%;
 }
 
 .matchhistoryitem-logo {
@@ -22,12 +19,21 @@
     max-height: 40px;
 }
 
-.matchhistoryitem-name {
-    height: 100%;
-    width:30%;
-}
-
 .matchhistoryitem-score {
     height: 100%;
-    width: 10%;
+    width: 12%;
 }
+
+.team-formater {
+    width: 38%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .matchhistoryitem-master {
+        font-size: 9px;
+    }
+}
+

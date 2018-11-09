@@ -17,3 +17,21 @@
     margin: auto;
     max-height: 12vh;
 }
+
+@media screen and (max-width: 500px) {
+    .header-main-container {
+        font-size: 1px;
+    }
+
+    .login-button-master{
+        margin-left: 0rem !important;
+    }
+
+    .hamburger {
+        padding: 0px !important;
+    }
+
+    .header-login-button {
+        padding-left: 15px;
+    }
+}
