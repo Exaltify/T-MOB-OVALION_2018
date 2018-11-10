@@ -7,3 +7,22 @@
     color: rgb(58, 156, 222);
     font-size: 18px;
 }
+
+.tripbookingstep-submit {
+    margin: auto;
+    padding: 1rem;
+    background-color: rgba(58, 156, 222, 0.4);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.tripbookingstep-error {
+    color: red;
+}
+
+.tripbookingstep-retour {
+    color: rgb(58, 156, 222);
+}

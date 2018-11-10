@@ -8,6 +8,10 @@
     padding-bottom: 0.5rem;
 }
 
+.rankingteamitem-active {
+    background-color: rgba(58, 156, 222, 0.2);
+}
+
 .rankingteamitem-logo-container {
     width: 30%;
 }

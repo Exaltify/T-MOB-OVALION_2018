@@ -79,4 +79,15 @@ Meteor.methods({
     console.log('team of user ' + userId + ' changed to ' + teamId);
   },
 
+  'user.setTrip' : (userId, trip, tripback, hotel) => {
+    let newProfile = Meteor.users.find({_id: userId}).fetch()[0].profile;
+    if (!newProfile.trips)
+      newProfile.trips = [];
+    newProfile.trips.push( { trip, tripback, hotel });
+    Meteor.users.update(userId, { $set: { profile: newProfile } });
+
+    console.log('profile of user ' + userId + ' changed');
+
+  }
+
 });

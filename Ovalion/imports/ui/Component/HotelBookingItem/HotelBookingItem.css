@@ -1,0 +1,43 @@
+.hotelbookingitem-master {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    width: 80%;
+    margin: auto auto 0.5rem;
+}
+
+.hotelbookingitem-active {
+    background-color: rgba(58, 156, 222, 0.2);
+}
+
+.hotelbookingitem-stars {
+    height: 25px;
+    width: 30%;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.hotelbookingitem-stars span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hotelbookingitem-stars img {
+    vertical-align: middle;
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.hotelbookingitem-name {
+    width: 50%;
+}
+
+.hotelbookingitem-price {
+    width: 20%;
+}

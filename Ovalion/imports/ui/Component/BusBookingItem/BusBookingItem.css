@@ -10,6 +10,10 @@
     margin: auto auto 0.5rem;
 }
 
+.busbookingitem-active {
+    background-color: rgba(58, 156, 222, 0.2);
+}
+
 .busbookingitem-cities {
     display: flex;
     flex-direction: row;

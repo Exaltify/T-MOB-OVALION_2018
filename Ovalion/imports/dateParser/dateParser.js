@@ -19,14 +19,30 @@ let getFrDateString = (timeStamp) => {
 }
 
 let getEnDateString = (timeStamp) => {
+  let dayStr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  let dayRef = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
+  let monthStr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+    'September', 'October', 'November', 'December'];
+  let monthRef = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  let date = new Date(timeStamp).toString();
+  let splitted = date.split(' ');
+  let day = dayStr[dayRef.indexOf(splitted[0])];
+  let dayNumber = splitted[2];
+  if (dayNumber[0] === '0') {
+    dayNumber = dayNumber[1];
+  }
+  let month = monthStr[monthRef.indexOf(splitted[1])];
+
+  return day + ' ' + dayNumber + ' ' + month;
 }
 
 let getEnDateEvent = (timeStamp) => {
   let dayStr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   let dayRef = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-  let monthStr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Auguste',
+  let monthStr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'];
   let monthRef = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -67,7 +83,24 @@ let getFrDateStringWithTime = (timeStamp) => {
 }
 
 let getEnDateStringWithTime = (timeStamp) => {
+  let dayStr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  let dayRef = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
+  let monthStr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+    'September', 'October', 'November', 'December'];
+  let monthRef = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  let date = new Date(timeStamp).toString();
+  let splitted = date.split(' ');
+  let day = dayStr[dayRef.indexOf(splitted[0])];
+  let monthNumber = splitted[2];
+  if (monthNumber[0] === '0') {
+    monthNumber = monthNumber[1];
+  }
+  let month = monthStr[monthRef.indexOf(splitted[1])];
+  let hour = splitted[4].substr(0, splitted[4].length - 3);
+
+  return day + ' ' + monthNumber + ' ' + month + ' ' + hour;
 }
 
 let dateParser = {
