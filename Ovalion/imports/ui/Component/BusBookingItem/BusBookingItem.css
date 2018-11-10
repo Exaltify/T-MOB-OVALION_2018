@@ -50,3 +50,35 @@
 .busbookingitem-mleft {
     margin-left: auto;
 }
+
+@media screen and (max-width: 700px) {
+    .busbookingitem-master {
+        width: auto !important;
+        font-size: 10px !important;
+    }
+
+    .tripbookingstep-chosetype-container {
+        text-align: center;
+        width: auto !important;
+        margin: 0 !important;
+    }
+
+    .busbookingitem-cities p:first-of-type {
+        margin-left: 0px !important;
+    }
+
+
+    .busbookingitem-sep {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+
+    .busbookingitem-hours {
+        margin-left: 0px !important;
+        width: 55%;
+    }
+
+    .busbookingitem-hours p:first-of-type {
+        margin-left: 0% !important;
+    }
+}

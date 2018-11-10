@@ -3,3 +3,32 @@
     width: calc(100% - 40px);
     padding: 20px;
 }
+
+.calendar-item {
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+.button-retour{
+    margin-top: 2rem;
+}
+
+
+.agenda-formater{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .rbc-calendar{
+        width: 500px !important;
+        height: 500px !important;
+    }
+
+    .calendar-item-logo img {
+        width: 75% !important;
+        height: 75% !important;
+    }
+
+}
