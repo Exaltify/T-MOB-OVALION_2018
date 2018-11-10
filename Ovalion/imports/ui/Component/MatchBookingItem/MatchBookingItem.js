@@ -11,6 +11,7 @@ export default class MatchBookingItem extends Component {
       teams: props.teams,
       localizedString: props.localizedString.MatchBookingItem,
       expanded: false,
+      parentHandler: props.parentHandler,
     }
   }
 
@@ -64,7 +65,9 @@ export default class MatchBookingItem extends Component {
             <p>{ this.state.localizedString.stade + ': '}</p>
             <p>{ 'Stade ' + this.state.teams[0].stadiumName }</p>
           </div>
-          <span className="matchbookingitem-button" onClick={(event) => event.preventDefault()}>{ this.state.localizedString.chose }</span>
+          <span className="matchbookingitem-button"
+                onClick={ this.state.parentHandler.bind(this, this.state.match )}>
+            { this.state.localizedString.chose }</span>
           <img className="matchbookingitem-icon" src="assets/icons/expand_less.svg" onClick={ this.expand } />
         </div>
       );

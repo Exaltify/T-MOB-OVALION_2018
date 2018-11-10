@@ -1,0 +1,48 @@
+.busbookingitem-master {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    width: 80%;
+    margin: auto auto 0.5rem;
+}
+
+.busbookingitem-cities {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
+.busbookingitem-cities p:first-of-type {
+    margin-left: 35%;
+}
+
+.busbookingitem-sep {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.busbookingitem-hours {
+    display: flex;
+    flex-direction: row;
+    border-left: solid 1px rgba(58, 156, 222, 0.4);
+    margin-left: 1rem;
+    width: 55%;
+}
+
+.busbookingitem-hours p:first-of-type {
+    margin-left: 20%;
+}
+
+.busbookingitem-price {
+    border-left: solid 1px rgba(58, 156, 222, 0.4);
+    margin-left: 1rem;
+    width: 10%;
+}
+
+.busbookingitem-mleft {
+    margin-left: auto;
+}

@@ -1,0 +1,9 @@
+.tripbookingstep-chosetype-container {
+    width: 50%;
+    margin: auto;
+}
+
+.tripbookingstep-chosetype-title {
+    color: rgb(58, 156, 222);
+    font-size: 18px;
+}

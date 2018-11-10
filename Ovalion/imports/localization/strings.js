@@ -56,6 +56,18 @@ export let localizedString = {
       stade: 'Stadium',
       chose: 'Chose this match',
     },
+    TripBookingStep: {
+      offertitle: 'Chose an offer',
+      simpletrip: 'Simple trip (bus only)',
+      fulltrip: 'Full trip (bus and hotel)',
+      billettitle: 'Chose ticket type',
+      front: 'Front',
+      turn: 'Turn',
+      chosebus: 'Chose a bus'
+    },
+    BusBookingItem: {
+      duree: 'duration',
+    },
   },
   Fr: {
     Menubar: {
@@ -126,6 +138,18 @@ export let localizedString = {
       awayteam: 'Equipe à l\'extérieur',
       stade: 'Stade',
       chose: 'Choisir ce match',
+    },
+    TripBookingStep: {
+      offertitle: 'Choisir une offre',
+      simpletrip: 'Voyage simple (bus seulement)',
+      fulltrip: 'Voyage complet (bus et hôtel)',
+      billettitle: 'Choisir un type de billet',
+      front: 'Tribune',
+      turn: 'Virage',
+      chosebus: 'Choisir un bus',
+    },
+    BusBookingItem: {
+      duree: 'durée',
     },
   }
 };

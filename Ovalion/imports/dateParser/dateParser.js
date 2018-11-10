@@ -39,7 +39,7 @@ let getEnDateEvent = (timeStamp) => {
   }
   let month = monthStr[monthRef.indexOf(splitted[1])];
   let year = splitted[3];
-  let hour = splitted[4];
+  let hour = splitted[4].substr(0, splitted[4].length - 3);
 
   return month + ' ' + dayNumber + ', ' + year + ' ' + hour
 
@@ -61,7 +61,7 @@ let getFrDateStringWithTime = (timeStamp) => {
     monthNumber = monthNumber[1];
   }
   let month = monthStr[monthRef.indexOf(splitted[1])];
-  let hour = splitted[4];
+  let hour = splitted[4].substr(0, splitted[4].length - 3);
 
   return day + ' ' + monthNumber + ' ' + month + ' ' + hour;
 }
@@ -100,6 +100,16 @@ let dateParser = {
         return getEnDateEvent(timeStamp);
     }
   },
+
+  getTimeOnly: (timeStamp) => {
+
+    let date = new Date(timeStamp).toString();
+    let splitted = date.split(' ');
+    let hour = splitted[4].substr(0, splitted[4].length - 3).replace(':', 'h');
+
+    return hour;
+  },
+
 }
 
 export default dateParser;

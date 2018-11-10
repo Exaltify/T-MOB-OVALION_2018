@@ -4,6 +4,7 @@ import { withTracker } from 'meteor/react-meteor-data'
 import './Reserver.css';
 import MatchBookingItem from '../../Component/MatchBookingItem/MatchBookingItem';
 import dbTeam from '../../../api/model/modelTeam'
+import TripBookingStep from '../TripBookingStep/TripBookingStep';
 
 let bookingSteps = {
   'CHOSE_MATCH': 0,
@@ -21,6 +22,7 @@ class Reserver extends Component {
       teams: props.teams,
       step: bookingSteps.CHOSE_MATCH,
       localizedString : props.localizedString.Reserver,
+      chosenMatch: '',
     }
   }
 
@@ -82,14 +84,23 @@ class Reserver extends Component {
                 match={ match }
                 teams= { teams }
                 localizedString={ this.props.localizedString }
+                parentHandler = { this.choseMatch }
               />
           })}
           </div>
         );
       case bookingSteps.CHOSE_TRIP:
-        return null;
+        let match = this.state.chosenMatch;
+        let homeMatchCity = this.getTeam(match.homeTeam);
+        return <TripBookingStep localizedString={ this.props.localizedString } match={ match } homeMatchCity={ homeMatchCity }/>
       case bookingSteps.PAYMENT:
         return null;
+    }
+  }
+
+  choseMatch = (matchId) => {
+    if (this.state.step === bookingSteps.CHOSE_MATCH) {
+      this.setState({ step: bookingSteps.CHOSE_TRIP, chosenMatch: matchId });
     }
   }
 
