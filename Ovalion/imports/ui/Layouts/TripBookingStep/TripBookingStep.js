@@ -18,22 +18,13 @@ export default class TripBookingStep extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      match: props.match,
-      chosenTripType: null,
-      chosenTicketType: null,
-      localizedString: this.props.localizedString.TripBookingStep,
-      homeMatchCity: props.match.cityLocation,
-    }
-
-    let trips = this.generateTrips();
+    let trips = this.generateTrips(props.match);
 
     this.state = {
       match: props.match,
       chosenTripType: null,
       chosenTicketType: null,
       localizedString: this.props.localizedString.TripBookingStep,
-      homeMatchCity: this.props.homeMatchCity,
       busTrips: trips[0],
       busTripsBack: trips[1],
     }
@@ -57,34 +48,34 @@ export default class TripBookingStep extends Component {
     this.setState({ chosenTicketType: value });
   }
 
-  generateBusTravel = (distance, hourBefore) => {
+  generateBusTravel = (match, distance, hourBefore) => {
     let duree = (distance / 70) * 60 * 60 * 1000;
-    let dateArrivee = this.state.match.date - (hourBefore * 3600 * 1000);
+    let dateArrivee = match.date - (hourBefore * 3600 * 1000);
     let dateDepart = dateArrivee - duree;
     let cityDepart = Meteor.user().profile.city;
-    let cityArrivee = this.state.homeMatchCity.city;
+    let cityArrivee = match.cityLocation;
     let prix = this.getRandomInt(5, 30);
 
     return { distance, duree, dateArrivee, dateDepart, cityDepart, cityArrivee, prix };
   }
 
-  generateBackBusTravel = (distance, hourAfter) => {
+  generateBackBusTravel = (match, distance, hourAfter) => {
     let duree = (distance / 70) * 60 * 60 * 1000;
-    let dateDepart = this.state.match.date +   + (hourAfter * 3600 * 1000);
+    let dateDepart = match.date + (90 * 60 * 1000)  + (hourAfter * 3600 * 1000);
     let dateArrivee = dateDepart + duree;
     let cityArrivee = Meteor.user().profile.city;
-    let cityDepart = this.state.homeMatchCity.city;
+    let cityDepart = match.cityLocation;
     let prix = this.getRandomInt(5, 30);
 
     return { distance, duree, dateArrivee, dateDepart, cityDepart, cityArrivee, prix };
   }
 
-  generateTrips = () => {
+  generateTrips = (match) => {
     let distance = this.getRandomInt(100, 800);
     let trips = [[], []];
     for (let i = 0; i < 3; i++) {
-        trips[0][i] = this.generateBusTravel(distance, i);
-        trips[1][i] = this.generateBackBusTravel(distance, i);
+        trips[0][i] = this.generateBusTravel(match, distance, i);
+        trips[1][i] = this.generateBackBusTravel(match, distance, i);
     }
     return trips;
   }
