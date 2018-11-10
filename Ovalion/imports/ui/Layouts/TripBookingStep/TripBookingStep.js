@@ -23,10 +23,10 @@ export default class TripBookingStep extends Component {
       chosenTripType: null,
       chosenTicketType: null,
       localizedString: this.props.localizedString.TripBookingStep,
-      homeMatchCity: this.props.homeMatchCity,
+      homeMatchCity: props.match.cityLocation,
     }
 
-    let busTrips = this.generateTrips();
+    let trips = this.generateTrips();
 
     this.state = {
       match: props.match,
@@ -34,7 +34,8 @@ export default class TripBookingStep extends Component {
       chosenTicketType: null,
       localizedString: this.props.localizedString.TripBookingStep,
       homeMatchCity: this.props.homeMatchCity,
-      busTrips: busTrips,
+      busTrips: trips[0],
+      busTripsBack: trips[1],
     }
   }
 
@@ -67,11 +68,23 @@ export default class TripBookingStep extends Component {
     return { distance, duree, dateArrivee, dateDepart, cityDepart, cityArrivee, prix };
   }
 
+  generateBackBusTravel = (distance, hourAfter) => {
+    let duree = (distance / 70) * 60 * 60 * 1000;
+    let dateDepart = this.state.match.date +   + (hourAfter * 3600 * 1000);
+    let dateArrivee = dateDepart + duree;
+    let cityArrivee = Meteor.user().profile.city;
+    let cityDepart = this.state.homeMatchCity.city;
+    let prix = this.getRandomInt(5, 30);
+
+    return { distance, duree, dateArrivee, dateDepart, cityDepart, cityArrivee, prix };
+  }
+
   generateTrips = () => {
-    let distance = this.getRandomInt(30, 800);
-    let trips = [];
+    let distance = this.getRandomInt(100, 800);
+    let trips = [[], []];
     for (let i = 0; i < 3; i++) {
-      trips[i] = this.generateBusTravel(distance, i);
+        trips[0][i] = this.generateBusTravel(distance, i);
+        trips[1][i] = this.generateBackBusTravel(distance, i);
     }
     return trips;
   }
@@ -106,8 +119,11 @@ export default class TripBookingStep extends Component {
         </div>
         <div className="tripbookingstep-chosetype-title"> <p>{ this.state.localizedString.chosebus }</p></div>
         { this.state.busTrips.map((trip) => {
-          console.log(trip);
           return <BusBookingItem key={ trip.duree + trip.prix } trip={ trip } localizedString={ this.props.localizedString }/>
+        })}
+        <div className="tripbookingstep-chosetype-title"> <p>{ this.state.localizedString.chosebusback }</p></div>
+        { this.state.busTripsBack.map((trip) => {
+          return <BusBookingItem key={ trip.prix + trip.duree } trip={ trip } localizedString={ this.props.localizedString }/>
         })}
       </div>
     );

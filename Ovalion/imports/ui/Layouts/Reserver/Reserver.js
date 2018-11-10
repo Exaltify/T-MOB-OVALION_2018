@@ -91,8 +91,7 @@ class Reserver extends Component {
         );
       case bookingSteps.CHOSE_TRIP:
         let match = this.state.chosenMatch;
-        let homeMatchCity = this.getTeam(match.homeTeam);
-        return <TripBookingStep localizedString={ this.props.localizedString } match={ match } homeMatchCity={ homeMatchCity }/>
+        return <TripBookingStep localizedString={ this.props.localizedString } match={ match } />
       case bookingSteps.PAYMENT:
         return null;
     }

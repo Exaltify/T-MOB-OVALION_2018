@@ -63,7 +63,8 @@ export let localizedString = {
       billettitle: 'Chose ticket type',
       front: 'Front',
       turn: 'Turn',
-      chosebus: 'Chose a bus'
+      chosebus: 'Chose a bus',
+      chosebusback: 'Chose a back bus',
     },
     BusBookingItem: {
       duree: 'duration',
@@ -146,7 +147,8 @@ export let localizedString = {
       billettitle: 'Choisir un type de billet',
       front: 'Tribune',
       turn: 'Virage',
-      chosebus: 'Choisir un bus',
+      chosebus: 'Choisir un bus aller',
+      chosebusback: 'Choisir un bus retour',
     },
     BusBookingItem: {
       duree: 'durée',
