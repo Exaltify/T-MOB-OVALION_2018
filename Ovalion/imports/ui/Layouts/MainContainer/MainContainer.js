@@ -48,7 +48,7 @@ export default class MainContainer extends Component {
       case CONTENT.CALENDRIER:
         return <Calendrier localizedString={ this.state.localizedString } />;
       case CONTENT.VOYAGE:
-        return <MesVoyages/>;
+        return <MesVoyages localizedString={ this.state.localizedString }/>;
       case CONTENT.EQUIPE:
         return <MonEquipe localizedString={ this.state.localizedString }/>;
       case CONTENT.PARAMS:

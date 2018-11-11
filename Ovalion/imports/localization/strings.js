@@ -77,6 +77,12 @@ export let localizedString = {
     BusBookingItem: {
       duree: 'duration',
     },
+    MesVoyages: {
+      localeIdentifier: 'En',
+      bus: 'Bus',
+      busback: 'Back bus',
+      hotel: 'Hotel',
+    }
   },
   Fr: {
     Menubar: {
@@ -169,5 +175,11 @@ export let localizedString = {
     BusBookingItem: {
       duree: 'durée',
     },
+    MesVoyages: {
+      localeIdentifier: 'Fr',
+      bus: 'Bus aller',
+      busback: 'Bus retour',
+      hotel: 'Hôtel',
+    }
   }
 };
