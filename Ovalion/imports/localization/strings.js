@@ -10,6 +10,7 @@ export let localizedString = {
     LoginButton: {
       co: 'Connect',
       disco: 'Disconnect',
+      deco: 'Success: You are disconnected',
     },
     Register: {
       bvn: 'Welcome to Ovalion !',
@@ -17,11 +18,16 @@ export let localizedString = {
       mdp: 'Password',
       city: 'City',
       reg: 'Register',
+      errorcreate: 'Error while creating your account',
+      createacc: 'You are registered',
     },
     Login: {
       log: 'Connect',
       addr: 'Email',
       mdp: 'Password',
+      connected: 'Success: You are connected',
+      errormdp: 'Error : Incorrect password',
+      errormail: 'Error : Incorrect email',
     },
     Calendar:{},
     Parametres: {
@@ -95,6 +101,7 @@ export let localizedString = {
     LoginButton: {
       co: 'Se connecter',
       disco: 'Se déconnecter',
+      deco: 'Succès: Vous êtes déconnecté',
     },
     Register: {
       bvn: 'Bienvenue sur Ovalion !',
@@ -102,11 +109,16 @@ export let localizedString = {
       mdp: 'Mot de passe',
       city: 'Ville',
       reg: 'S\'inscrire',
+      errorcreate: 'Erreur lors de la création du compte',
+      createacc: 'Vous êtes inscrit',
     },
     Login: {
       log: 'Se connecter',
       addr: 'Adresse email',
       mdp: 'Mot de passe',
+      connected: 'Succès: Vous êtes connecté',
+      errormdp: 'Erreur : Mot de passe incorrect.',
+      errormail: 'Erreur : Adresse mail incorrect',
     },
     Calendar: {
       allDay: 'journée',

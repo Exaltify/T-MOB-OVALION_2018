@@ -48,6 +48,15 @@ class Calendrier extends Component {
     let current = Date.now();
     let date = event.match.date;
 
+    let userTeam = Meteor.user().profile.team;
+    let userTeamMatch;
+
+    if (userTeam === event.home._id)
+      userTeamMatch = event.home._id;
+    if (userTeam === event.away._id)
+      userTeamMatch = event.away._id;
+
+
     return (
       <div className='popup_inner'>
         <div className="popup-container">
@@ -60,11 +69,37 @@ class Calendrier extends Component {
 
           {current > date ?
             <div className="popup-versus">
-              {event.match.result[0] > event.match.result[1] ?
-                <p><b>{event.match.result[0]}</b> - {event.match.result[1]}</p>
-                :
-                <p>{event.match.result[0]} - <b>{event.match.result[1]}</b></p>
 
+              {userTeamMatch ?
+                <div>
+
+                  {event.match.result[0] > event.match.result[1] ?
+                    <div>
+                      {userTeamMatch === event.home._id ?
+                        <div className="green"><b>{event.match.result[0]}</b> - {event.match.result[1]}</div>
+                        :
+                        <div className="red"><b>{event.match.result[0]}</b> - {event.match.result[1]}</div>
+                      }
+
+                    </div>
+                    :
+                    <div>
+
+                      {userTeamMatch === event.away._id ?
+                        <div className="green">{event.match.result[0]} - <b>{event.match.result[1]}</b></div>
+                        :
+                        <div className="red">{event.match.result[0]} - <b>{event.match.result[1]}</b></div>
+                      }
+
+
+                    </div>
+
+                  }
+
+                </div>
+
+                :
+                <div>{event.match.result[0]} - {event.match.result[1]}</div>
               }
 
 
@@ -83,6 +118,8 @@ class Calendrier extends Component {
 
           }
 
+
+
           <div className="team-formater popup-team">
             <div className="popup-logo">
               <img src={ event.away.logoSrc } />
@@ -90,6 +127,13 @@ class Calendrier extends Component {
             <div><p>{ event.away.name }</p></div>
           </div>
         </div>
+
+        {current < date ?
+          <button className="popup-button-reserver" onClick={this.toggleReservation.bind(this, event.match)}>Reserver</button>
+          :
+          null
+        }
+
       </div>
     );
   }
@@ -167,7 +211,7 @@ class Calendrier extends Component {
           components={{
             event: this.Event,
             agenda: {
-              event: this.EventAgenda,
+              event: this.EventAgenda.bind(this),
             },
           }}
         />

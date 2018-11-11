@@ -28,6 +28,9 @@ export default class Register extends Component {
         if (err) {
           console.log('error creating acc');
           console.log(err);
+          Bert.alert( this.state.localizedString.errorcreate, 'danger', 'growl-top-right' );
+        }else {
+          Bert.alert(this.state.localizedString.createacc, 'success', 'growl-top-right');
         }
       })
   }

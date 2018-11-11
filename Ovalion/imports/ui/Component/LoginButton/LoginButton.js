@@ -20,6 +20,7 @@ export default class LoginButton extends Component {
 
   showLoginPopup = (active) => {
     if (Meteor.userId()) {
+      Bert.alert(this.state.localizedString.deco, 'success', 'growl-top-right');
       Meteor.logout(this.state.refreshApp);
       this.setState({ active: false });
       return;

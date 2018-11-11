@@ -21,6 +21,16 @@ export default class Popup extends Component {
   render() {
     let current = Date.now();
     let date = this.state.popupInfo.match.date;
+    let userTeam = Meteor.user().profile.team;
+    let userTeamMatch;
+
+    if (userTeam === this.state.popupInfo.home._id)
+      userTeamMatch = this.state.popupInfo.home;
+    if (userTeam === this.state.popupInfo.away._id)
+      userTeamMatch = this.state.popupInfo.away;
+
+    console.log(userTeamMatch);
+
 
     return (
       <div className='popup' onClick={this.state.closePopup}>
@@ -35,12 +45,38 @@ export default class Popup extends Component {
 
             {current > date ?
               <div className="popup-versus">
+
+                {userTeamMatch ?
+                  <div>
+
                   {this.state.popupInfo.match.result[0] > this.state.popupInfo.match.result[1] ?
-                    <p><b>{this.state.popupInfo.match.result[0]}</b> - {this.state.popupInfo.match.result[1]}</p>
+                    <div>
+                      {userTeamMatch._id === this.state.popupInfo.home._id ?
+                        <div className="green"><b>{this.state.popupInfo.match.result[0]}</b> - {this.state.popupInfo.match.result[1]}</div>
+                        :
+                        <div className="red"><b>{this.state.popupInfo.match.result[0]}</b> - {this.state.popupInfo.match.result[1]}</div>
+                      }
+
+                      </div>
                     :
-                    <p>{this.state.popupInfo.match.result[0]} - <b>{this.state.popupInfo.match.result[1]}</b></p>
+                    <div>
+
+                      {userTeamMatch._id === this.state.popupInfo.away._id ?
+                        <div className="green">{this.state.popupInfo.match.result[0]} - <b>{this.state.popupInfo.match.result[1]}</b></div>
+                        :
+                        <div className="red">{this.state.popupInfo.match.result[0]} - <b>{this.state.popupInfo.match.result[1]}</b></div>
+                      }
+
+
+                    </div>
 
                   }
+
+                  </div>
+
+                  :
+                    <div>{this.state.popupInfo.match.result[0]} - {this.state.popupInfo.match.result[1]}</div>
+                }
 
 
                 <p>{dateParser.getDateEvent(this.state.popupInfo.match.date, 'Fr')}</p>

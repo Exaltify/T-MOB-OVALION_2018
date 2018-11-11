@@ -21,11 +21,12 @@ export default class Login extends Component {
 
 
   handleSubmit = () => {
+    console.log("sub");
     Meteor.loginWithPassword(this.emailAddress.value, this.password.value, (error) => {
       if (error) {
-        let alertMessage = "Erreur : ";
+        let alertMessage = "";
         if (error.error === 403)
-          alertMessage += (error.reason === 'Incorrect password') ? 'Mot de passe incorrect.' : 'Adresse mail incorrecte.';
+          alertMessage += (error.reason === 'Incorrect password') ? this.state.localizedString.errormdp : this.state.localizedString.errormail;
         else
           alertMessage += 'Identifiants incorrects.';
         Bert.alert( alertMessage, 'danger', 'growl-top-right' );
@@ -33,6 +34,7 @@ export default class Login extends Component {
       else {
         console.log('connection success!');
         this.setState({ active: false }, this.state.setInactive(), this.state.refreshApp());
+        Bert.alert( this.state.localizedString.connected  , 'success', 'growl-top-right' );
       }
     });
   }
