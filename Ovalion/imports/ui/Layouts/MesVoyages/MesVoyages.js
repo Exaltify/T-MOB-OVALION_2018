@@ -8,8 +8,13 @@ export default class MesVoyages extends Component {
 
     constructor(props) {
         super(props);
+        let trips;
+        if (Meteor.user().profile.trips)
+          trips = Meteor.user().profile.trips;
+        else
+          trips = [];
         this.state = {
-          trips: Meteor.user().profile.trips,
+          trips: trips,
           localizedString: this.props.localizedString.MesVoyages,
         }
     }
@@ -19,7 +24,11 @@ export default class MesVoyages extends Component {
   }
 
     render() {
-        return (
+        return ( (this.state.trips.length === 0) ?
+          <div className="mesvoyages-master">
+            <div><p className="mesvoyages-title"> { this.state.localizedString.notrips } </p></div>
+          </div>
+          :
           <div className="mesvoyages-master">
             { this.state.trips.map((tripFull) => {
               let trip = tripFull.trip;

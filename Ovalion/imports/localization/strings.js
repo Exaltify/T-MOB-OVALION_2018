@@ -88,6 +88,7 @@ export let localizedString = {
       bus: 'Bus',
       busback: 'Back bus',
       hotel: 'Hotel',
+      notrips: 'You did not book any trip yet',
     }
   },
   Fr: {
@@ -192,6 +193,7 @@ export let localizedString = {
       bus: 'Bus aller',
       busback: 'Bus retour',
       hotel: 'Hôtel',
+      notrips: 'Vous n\'avez pas encore réservé de voyage',
     }
   }
 };
